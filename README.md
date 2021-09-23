@@ -1,37 +1,54 @@
-# 万岳直播商城系统Android开源版
-
-#### 介绍
-万岳直播商城系统源码、直播带货、短视频带货、社区种草，集客户关系管理、营销电商和直播商城为一体，能够真正帮助企业基于微信公众号、小程序、app等，实现会员管理、数据分析、直播、精准营销的新直播商城系统，快速积累客户、会员数据分析、智能转化客户、有效提高销售、会员维护
-
-#### 软件架构
-软件架构说明
+<div align=center><img src="https://images.gitee.com/uploads/images/2021/0923/172814_7cd9ada9_8162876.png" width="590" height="212"/></div>
 
 
-#### 安装教程
+### 项目说明（如果对你有用，请给个star！）
+##### <a target="_blank" href="">项目文档</a> |  <a target="_blank" href="">部署文档</a>  |  <a target="_blank" href="">常见问题</a> | <a target="_blank" href="">升级日志</a>
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+---
 
-#### 使用说明
+### 系统演示
+- 总后台地址: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://demo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
+- 商户后台地址: <a target="_blank" href="https://demo.sdwanyue.com/admin">https://demo.sdwanyue.com/admin</a> 账号: demo 密码: 123456
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### Android版地址
+   - 接口框架地址: 本项目根目录下phalapi目录
+   - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_android">点击此处</a>
+  ![输入图片说明](https://images.gitee.com/uploads/images/2021/0923/180258_5529020c_8162876.png "android.png")
+   
+### 项目介绍
+万岳科技可为商家快速搭建起一套属于自己的直播商城系统，有效避开商城直播过程中的痛点难点，加入自身创意的同时，汲取各家平台的特色功能和体验，并且可根据用户的运营需求对系统做定制开发。
+* 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
+* 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的直播商城系统。
 
-#### 参与贡献
+基于ThinkPhp6.0+Vue 开发的一套万岳直播商城系统，系统功能介绍[查看]()，专业售后技术团队，让您二开无忧。
+ ### 开源版使用须知
+    
+   - 允许用于个人学习、教学案例
+    
+   - 开源版不适合商用，商用请购买商业版
+    
+   - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+### 商业合作
+* 如果你想使用功能更完善的教育系统，请联系QQ客服: 2415408120获取专业版
+* 如果您想基于教育系统进行定制开发，我们提供有偿定制服务支持！
+* 其他合作模式不限，欢迎来撩！
+* 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
+                
+  
+### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
+
+<div style='height: 130px'>
+    <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0317/100340_bec42d1f_8543696.png" width="602" height="123"/>
+    <div style="float:left;">
+        <p>QQ：259603330</p>
+        <p>QQ群：995910672</p>
+    </div>
+</div>
+<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 可加
+
+> QQ群：995910672
+ <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0524/181101_c6bda503_2242923.jpeg" width="102" height="102"/>
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100511_29ed24e9_8543696.png "公众号.png")
