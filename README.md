@@ -7,8 +7,8 @@
 ---
 
 ### 系统演示
-- 总后台地址: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://demo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
-- 商户后台地址: <a target="_blank" href="https://demo.sdwanyue.com/admin">https://demo.sdwanyue.com/admin</a> 账号: demo 密码: 123456
+- 总后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/admin/login/index">https://malldemo.sdwanyue.com/admin/login/index</a> 
+- 商户后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> 
 
 ### Android版地址
    - 接口框架地址: 本项目根目录下phalapi目录
