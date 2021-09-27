@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <declare-styleable name="RatingStar">
+            <attr name="starNormal" format="reference"/>
+            <attr name="starFocus" format="reference"/>
+            <attr name="starNumber" format="integer"/>
+            <attr name="starHeight" format="dimension"/>
+            <attr name="starWidth" format="dimension"/>
+        </declare-styleable>
+
+
+
+
+</resources>

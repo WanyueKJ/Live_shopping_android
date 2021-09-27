@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="19dp"
+    android:id="@+id/vp_tab"
+    android:background="@drawable/bg_global">
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="backClick"
+        android:padding="11dp"
+        android:src="@mipmap/icon_back_left2"
+        android:tint="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxWidth="300dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="标题"
+        />
+    <TextView
+        android:id="@+id/tv_right_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="right|center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:textColor="@color/enable_right_title"
+        android:textSize="@dimen/text_size_15"
+        />
+
+
+</FrameLayout>

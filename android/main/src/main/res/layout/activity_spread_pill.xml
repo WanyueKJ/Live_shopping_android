@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SpreadPillActivity">
+   <include layout="@layout/view_title"/>
+   <androidx.viewpager2.widget.ViewPager2
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:id="@+id/viewPager"
+       />
+   <Button style="@style/default_bottom_button"
+           android:layout_width="295dp"
+           android:layout_height="34dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="26dp"
+           android:text="@string/save_pill"
+           android:id="@+id/btn_save"
+           android:enabled="false"
+           android:alpha="0.5"
+          android:layout_marginBottom="@dimen/default_margin"
+       />
+
+
+</LinearLayout>

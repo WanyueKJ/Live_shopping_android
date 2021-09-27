@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_msg_order"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/im_order"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/msg_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray1"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/red_point_order"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray6"
+            android:id="@+id/v_snap_line"
+            android:visibility="gone"
+            />
+
+        <FrameLayout
+            android:id="@+id/btn_snatch"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_grab_sheet"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/snatch_hall"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/msg_snatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/message_snap_tip"
+                android:textColor="@color/gray1"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/red_point_snatch"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray6"
+            />
+
+
+
+        <FrameLayout
+            android:id="@+id/btn_didi_order"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_didi_order"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/didi_order"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/msg_didi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray1"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/red_point_didi"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray6"
+            />
+
+
+
+
+        <FrameLayout
+            android:id="@+id/btn_system_msg"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_msg_sys"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/im_system_msg"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/msg_sys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray1"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/gray1"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/red_point"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

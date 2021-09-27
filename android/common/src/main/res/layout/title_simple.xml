@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vp_tab"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="backClick"
+        android:padding="11dp"
+        android:src="@mipmap/icon_back_left2"
+        android:tint="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17"
+        android:textStyle="bold"
+        tools:text="我是标题"
+
+        android:layout_marginRight="39dp"
+        />
+
+</LinearLayout>

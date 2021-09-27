@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_global"
+        android:layout_height="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_message"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tg_tv_order_message"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/user_order_total"
+        android:textSize="@dimen/text_size_11"
+        android:textColor="@color/white"
+        android:id="@+id/tv_order_message"
+        app:layout_constraintLeft_toLeftOf="@id/tg_tv_order_message"
+        app:layout_constraintTop_toBottomOf="@id/tg_tv_order_message"
+        app:layout_constraintBottom_toTopOf="@id/vp_order_container"
+        android:layout_marginTop="@dimen/default_margin"
+        />
+
+    <com.wanyue.common.custom.ShadowContainer
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:containerCornerRadius="5dp"
+        app:containerDeltaLength="5dp"
+        app:containerShadowColor="#10000000"
+        app:containerShadowRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/vp_order_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_order_message"
+        >
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_color_white_radius_5"
+            android:id="@+id/indicator"
+            >
+        </net.lucode.hackware.magicindicator.MagicIndicator>
+    </com.wanyue.common.custom.ShadowContainer>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

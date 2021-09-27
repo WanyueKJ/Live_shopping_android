@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:background="@drawable/bg_color_white_radius_10">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/icon_search_empty"
+        android:id="@+id/img_avator"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="艾瑞巴迪"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@+id/img_avator"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="超级王牌"
+        android:background="@drawable/bg_color_global_radiu_2"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:id="@+id/tv_level"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        />
+        <View style="@style/line3"
+            android:id="@+id/v_line"
+              android:layout_below="@+id/img_avator"
+              android:layout_marginTop="5dp"
+            />
+    <com.wanyue.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/order_detail_skill"
+        android:id="@+id/vp_skill"
+        android:background="@color/white"
+        android:layout_below="@+id/v_line"
+        ></com.wanyue.common.custom.ItemLinearLayout>
+
+
+    <com.wanyue.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/time"
+        android:background="@color/white"
+        android:id="@+id/vp_time"
+        android:layout_below="@+id/vp_skill"
+        ></com.wanyue.common.custom.ItemLinearLayout>
+
+    <com.wanyue.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/cost"
+        android:id="@+id/vp_price"
+        android:background="@color/white"
+        android:layout_below="@+id/vp_time"
+        ></com.wanyue.common.custom.ItemLinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn_primary"
+        android:gravity="center"
+        android:text="@string/order_submit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@+id/vp_price"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <inset
+            android:insetTop="12dp"
+            android:insetBottom="12dp"
+            >
+            <bitmap android:src="@mipmap/icon_live_danmu_1"/>
+        </inset>
+    </item>
+    <item android:state_checked="false">
+        <inset
+            android:insetTop="12dp"
+            android:insetBottom="12dp"
+            >
+            <bitmap android:src="@mipmap/icon_live_danmu_0"/>
+        </inset>
+    </item>
+</selector>

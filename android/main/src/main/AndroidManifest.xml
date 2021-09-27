@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wanyue.main">
+
+    <application>
+        <activity android:name=".view.activity.WindowActivity"
+            android:theme="@style/dialog2"
+            ></activity>
+        <activity android:name=".view.activity.RegisterActivity" />
+
+        <activity android:name=".view.activity.MyCoinActivity" />
+        <activity android:name=".view.activity.SettingActivity" />
+        <activity android:name=".view.activity.SearchLiveActivity" />
+        <activity android:name=".apply.activity.ApplyStoreActivity" />
+
+
+        <activity android:name=".store.view.activity.GiftProfitActivity" />
+        <activity android:name=".store.view.activity.GetProfitActivity" />
+        <activity android:name=".store.view.activity.ProfitActivity" />
+        <activity android:name=".store.view.activity.StoreOrderListActivity" />
+        <activity android:name=".store.view.activity.MyStoreActivity" />
+
+        <activity android:name=".view.activity.EditProfileActivity" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MainActvivityTheme"></activity>
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".view.activity.MyDiamondsActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

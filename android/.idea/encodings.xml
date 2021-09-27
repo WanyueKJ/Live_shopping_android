@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/common/src/main/res/xml/network_security_config.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/main/src/main/res/color/fg_btn_login_code.xml" charset="GBK" />
+  </component>
+</project>

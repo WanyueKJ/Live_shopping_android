@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom">
+
+    <com.wanyue.live.custom.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="说点什么..."
+        android:textColor="#ffefefef"
+        android:textSize="@dimen/text_size_14"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="50dp"
+        app:rtvBgColor="#33000000"
+        app:rtvRadius="18dp"
+        android:id="@+id/btn_chat"
+        />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/btn_shop"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/bg_live_shop"
+            android:layout_gravity="center"
+            />
+        <ImageView
+           android:id="@+id/img_shop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_live_shop"
+            android:padding="3dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btn_function"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        />
+
+
+
+</LinearLayout>

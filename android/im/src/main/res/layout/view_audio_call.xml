@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#1E1E1E">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:riv_corner_radius="10dp"
+            tools:src="@mipmap/ic_launcher_sys_msg"
+            android:id="@+id/img_avator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="紫霞仙子"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_avator"
+            android:id="@+id/tv_name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="等待对方接受邀请..."
+            android:textColor="@color/gray1"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_state"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="120dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:id="@+id/btn_mute"
+            >
+            <com.yunbao.common.custom.CheckImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:deault_image="@mipmap/icon_voice_close"
+                app:select_image="@mipmap/icon_voice_open"
+                android:id="@+id/ci_mute"
+                app:enable_click="false"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="静音"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+        <Space  android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+
+        <Space  android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:id="@+id/btn_hands_free"
+            >
+            <com.yunbao.common.custom.CheckImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:deault_image="@mipmap/icon_hands_free"
+                app:select_image="@mipmap/icon_hands_free_cancle"
+                android:id="@+id/ci_hands_frees"
+                app:enable_click="false"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hand_free"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:id="@+id/tv_camera_toggle"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.yunbao.im.custom.CallButtonLayout
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:call_icon="@mipmap/icon_call_refuse"
+        app:call_text="@string/hang_up"
+        app:call_size="50dp"
+        app:call_text_color="@color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+        />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:src="@mipmap/icon_narrow"
+        android:padding="10dp"
+        android:id="@+id/btn_narrow"
+        android:layout_margin="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/btn_flow_time"
+        android:visibility="invisible"
+        android:background="@drawable/bg_color_white_radius_10"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_call_audio2"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            tools:text="00:22:46"
+            android:layout_marginTop="2dp"
+            android:textColor="#ff34c577"
+            android:textSize="10dp"
+            android:id="@+id/tv_flow_time"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

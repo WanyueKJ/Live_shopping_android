@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="0dp"
+        android:layout_height="167dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/bg_live_mannger"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="5dp"
+        android:id="@+id/img_goods_cover"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Canon/佳能  PowerShot G7X 王者归来  正品行货全国联保,Canon/佳能  PowerShot G7X 王者归来  正品行货全国联保"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_15"
+        android:id="@+id/tv_title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:minHeight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_goods_cover"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="¥ 6899.00"
+        android:textColor="#ffff4343"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/tv_price"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gift_group_1" type="id"/>
+    <item name="gift_group_2" type="id"/>
+    <item name="gift_gif" type="id"/>
+    <item name="gift_svga" type="id"/>
+    <item name="gif_gift_tip_group" type="id"/>
+    <item name="gif_gift_tip" type="id"/>
+</resources>

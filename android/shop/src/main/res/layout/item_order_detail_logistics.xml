@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vp_logistics"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/order_detail_group">
+        <TextView
+            android:text="@string/order_detail_tip7"
+            style="@style/order_detail_group_tv_tip" />
+        <TextView
+            tools:text="2020"
+            style="@style/order_detail_group_tv_content"
+            android:id="@+id/tv_delivery"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/order_detail_group">
+        <TextView
+            android:text="@string/order_detail_tip8"
+            style="@style/order_detail_group_tv_tip" />
+        <TextView
+            tools:text="已支付"
+            style="@style/order_detail_group_tv_content"
+            android:id="@+id/tv_logistics_company"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/order_detail_group">
+        <TextView
+            android:text="@string/order_detail_tip9"
+            style="@style/order_detail_group_tv_tip" />
+        <TextView
+            tools:text="微信支付"
+            style="@style/order_detail_group_tv_content"
+            android:id="@+id/tv_express_no"
+            />
+    </LinearLayout>
+
+</LinearLayout>

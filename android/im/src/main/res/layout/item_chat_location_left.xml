@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray3"
+        android:textSize="13sp"
+        android:visibility="gone"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        />
+
+    <com.yunbao.im.custom.BubbleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/avatar"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/avatar"
+        android:clickable="false"
+        android:minHeight="40dp"
+        android:paddingLeft="5dp"
+        app:arrowHeight="5dp"
+        app:arrowPositionY="20dp"
+        app:arrowWidth="10dp"
+        app:bubbleBgColor="#fff"
+        app:bubbleRadius="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/textColor2"
+                android:textSize="12sp"
+                />
+
+            <com.yunbao.im.custom.MyRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius_bottom_left="5dp"
+                    app:riv_corner_radius_bottom_right="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_location_marker"
+                    android:translationY="-5dp"
+                    />
+            </com.yunbao.im.custom.MyRelativeLayout>
+
+        </LinearLayout>
+
+    </com.yunbao.im.custom.BubbleLayout>
+
+</RelativeLayout>

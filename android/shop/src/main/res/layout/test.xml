@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wanyue.shop.view.widet.linear.ListFlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    app:flexWrap="wrap"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="123"
+        app:layout_flexBasisPercent="24%"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="123"
+        app:layout_flexBasisPercent="24%"
+
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="123"
+        app:layout_flexBasisPercent="24%"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="123"
+        app:layout_flexBasisPercent="24%"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="123"
+        app:layout_flexBasisPercent="24%"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="123"
+        app:layout_flexBasisPercent="24%"
+        />
+
+
+
+</com.wanyue.shop.view.widet.linear.ListFlexboxLayout>

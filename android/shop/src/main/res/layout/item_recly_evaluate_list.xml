@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_avator"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            tools:src="@drawable/icon_logistics"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="13"
+                android:textSize="@dimen/text_size_11"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/tv_user_name"
+                />
+
+        <com.wanyue.shop.view.widet.RatingStar
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/star"
+            android:layout_marginLeft="8dp"
+            app:starNumber="5"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2020-7"
+        android:textSize="@dimen/text_size_11"
+        android:textColor="@color/gray1"
+        android:id="@+id/tv_time"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="这是一条评论"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/textColor"
+        android:id="@+id/tv_content"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.wanyue.shop.view.widet.linear.ListFlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+  <ImageView
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:src="@drawable/triangle_up"
+      android:layout_marginLeft="30dp"
+      android:id="@+id/img_arrow_top"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/bg_color_grayf5_radius_2"
+        android:src="@drawable/triangle_up"
+        android:id="@+id/tv_reply"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/textColor"
+        android:lineSpacingExtra="2dp"
+        tools:text="店小二一段超长的回复啊啊啊啊啊啊啊啊
+小二一段超长的回复啊啊啊啊啊啊啊啊
+小二一段超长的回复啊啊啊啊啊啊啊啊
+小二一段超长的回复啊啊啊啊啊啊啊啊"
+        />
+
+
+
+</LinearLayout>

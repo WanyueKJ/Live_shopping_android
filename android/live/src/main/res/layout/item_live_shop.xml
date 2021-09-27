@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/thumb"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        app:riv_corner_radius="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="26dp"
+        android:layout_height="13dp"
+        android:background="@mipmap/bg_goods_num"
+        app:layout_constraintLeft_toLeftOf="@+id/thumb"
+        app:layout_constraintTop_toTopOf="@id/thumb"
+        android:textSize="@dimen/text_size_8"
+        android:textColor="@color/white"
+        android:gravity="center"
+        tools:text="123"
+        android:id="@+id/tv_goods_num"
+        />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintLeft_toRightOf="@+id/thumb"
+        app:layout_constraintTop_toTopOf="@id/thumb"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/textColor"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintLeft_toLeftOf="@id/des"
+        app:layout_constraintBottom_toBottomOf="@id/thumb"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_13"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/price_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gray3"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginRight="@dimen/default_margin"
+            android:background="@drawable/bound_color_global_radius_15"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/goods_tip_30"
+            android:textColor="@color/global"
+            android:textSize="@dimen/text_size_12" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintLeft_toLeftOf="@id/thumb"
+        app:layout_constraintRight_toRightOf="@id/des"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#eee" />
+</androidx.constraintlayout.widget.ConstraintLayout>

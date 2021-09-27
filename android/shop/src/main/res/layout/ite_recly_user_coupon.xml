@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/default_margin"
+    android:layout_marginRight="@dimen/default_margin">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        tools:src="@drawable/bg_coupon_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_head_bg"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/img_head_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="¥5"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/tv_coupon_price"
+        app:layout_constraintLeft_toLeftOf="@id/img_head_bg"
+        app:layout_constraintRight_toRightOf="@id/img_head_bg"
+        app:layout_constraintTop_toTopOf="@id/img_head_bg"
+        app:layout_constraintBottom_toTopOf="@id/tv_user_price"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/user_price_min"
+        android:textSize="@dimen/text_size_11"
+        android:textColor="@color/white"
+        android:id="@+id/tv_user_price"
+        app:layout_constraintLeft_toLeftOf="@id/img_head_bg"
+        app:layout_constraintRight_toRightOf="@id/img_head_bg"
+        app:layout_constraintBottom_toBottomOf="@id/img_head_bg"
+        app:layout_constraintTop_toBottomOf="@id/tv_coupon_price"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="粉丝福利券"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/textColor"
+        android:id="@+id/tv_title"
+        app:layout_constraintLeft_toRightOf="@id/img_head_bg"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginBottom="13dp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:id="@+id/line"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.10.20 到期"
+        android:textSize="@dimen/text_size_11"
+        android:textColor="@color/gray1"
+        android:layout_marginTop="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:id="@+id/tv_end_time"
+        />
+
+    <com.wanyue.common.custom.CheckImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:layout_constraintRight_toRightOf="@id/line"
+        app:layout_constraintTop_toTopOf="@id/tv_end_time"
+        app:layout_constraintBottom_toBottomOf="@id/tv_end_time"
+        android:textColor="@color/fg_coupon_btn"
+        app:deault_image="@drawable/icon_check_shop_cart_default"
+        app:select_image="@drawable/icon_check_shop_cart_select"
+        android:id="@+id/img_select_coupon"
+        app:enable_click="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

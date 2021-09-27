@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/order_detail_group">
+        <TextView
+            android:text="@string/order_detail_tip10"
+            style="@style/order_detail_group_tv_tip" />
+        <TextView
+            tools:text="2020"
+            style="@style/order_detail_group_tv_content"
+            android:id="@+id/tv_name"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/order_detail_group">
+        <TextView
+            android:text="@string/order_detail_tip11"
+            style="@style/order_detail_group_tv_tip" />
+        <TextView
+            tools:text="已支付"
+            style="@style/order_detail_group_tv_content"
+            android:id="@+id/tv_phone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/order_detail_group"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        >
+        <TextView
+            android:text="@string/order_detail_tip12"
+            style="@style/order_detail_group_tv_tip" />
+        <TextView
+            tools:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            style="@style/order_detail_group_tv_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address"
+            />
+    </LinearLayout>
+
+</LinearLayout>

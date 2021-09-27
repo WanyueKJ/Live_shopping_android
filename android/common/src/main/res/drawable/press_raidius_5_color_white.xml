@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/bound_color_white_bolder_gray_radius_5"
+        android:state_pressed="false">
+    </item>
+
+    <item
+        android:drawable="@drawable/bg_color_gray_radius_5"
+        android:state_pressed="true">
+    </item>
+</selector>

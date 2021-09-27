@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:background="@color/black1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_color_white_radius_10"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ll_btn_container"
+        >
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_bottom_style"
+        android:text="@string/cancel"
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/bg_color_white_radius_10"
+        />
+
+</LinearLayout>

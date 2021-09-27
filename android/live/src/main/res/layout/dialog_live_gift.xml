@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5121001"
+    >
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        />
+
+    <com.wanyue.common.custom.DrawableTextView
+        android:visibility="gone"
+        android:id="@+id/btn_luck_gift_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="2dp"
+        android:drawableTint="@color/gray1"
+        android:gravity="center_vertical"
+        android:text="@string/live_gift_luck_tip_2"
+        android:textColor="@color/gray1"
+        android:textSize="12sp"
+        app:dt_right_drawable="@mipmap/icon_arrow_right_3"
+        app:dt_right_height="12dp"
+        app:dt_right_width="12dp"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="46dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/btn_send_lian"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/icon_live_gift_lian"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/live_gift_send_lian"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/lian_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

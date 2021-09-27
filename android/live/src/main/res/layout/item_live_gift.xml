@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wanyue.common.custom.MyFrameLayout2
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:mfl_ratio="1.25"
+    >
+
+    <com.wanyue.common.custom.MyRadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_live_gift_item"
+        android:button="@null"
+        android:checked="true"
+        />
+
+    <com.wanyue.live.custom.GiftMarkView
+        android:id="@+id/mark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/gray3"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_gravity="bottom"
+        />
+
+</com.wanyue.common.custom.MyFrameLayout2>

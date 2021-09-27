@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SpreadCensusActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="178dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_spread_normal"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_bg"
+        />
+    <include  layout="@layout/view_title_transport"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推广人数"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp_tab"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:id="@+id/tv_head_title"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/tv_num_tip"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="3"
+        android:textSize="@dimen/text_size_25"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_head_title"
+        app:layout_constraintLeft_toLeftOf="@id/tv_head_title"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg"
+        android:id="@+id/tv_num_tip"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/tv_num_tip"
+        app:layout_constraintBottom_toBottomOf="@id/tv_num_tip"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_spread_person"
+        app:layout_constraintTop_toBottomOf="@+id/vp_tab"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/default_margin"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:id="@+id/btn_level_group"
+            >
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/spread_tip_11"
+                android:button="@null"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/fg_color_spread_level"
+                android:layout_weight="1"
+                android:id="@+id/btn_level1"
+                android:minWidth="100dp"
+                android:checked="true"
+                android:background="@drawable/checked_button_spread"
+                android:gravity="center" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/spread_tip_12"
+                android:button="@null"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/fg_color_spread_level"
+                android:layout_weight="1"
+                android:minWidth="100dp"
+                android:id="@+id/btn_level2"
+                android:background="@drawable/checked_button_spread"
+                android:gravity="center" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        </RadioGroup>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/vp_search_container"
+            android:background="@color/white"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/vp_sort_container"
+            android:layout_marginTop="5dp"
+            />
+
+        <com.wanyue.common.custom.refresh.RxRefreshView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/refreshView"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

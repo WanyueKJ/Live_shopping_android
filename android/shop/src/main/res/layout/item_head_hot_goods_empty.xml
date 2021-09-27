@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_cover"
+        />
+
+  <View
+      android:layout_width="100dp"
+      android:layout_height="1dp"
+      android:background="@color/textColor"
+      app:layout_constraintTop_toTopOf="@id/tv_tip"
+      app:layout_constraintBottom_toBottomOf="@id/tv_tip"
+      app:layout_constraintRight_toLeftOf="@+id/img_left"
+      android:layout_marginRight="10dp"
+      />
+
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:src="@drawable/icon_black_rect"
+        app:layout_constraintTop_toTopOf="@id/tv_tip"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tip"
+        app:layout_constraintRight_toLeftOf="@+id/tv_tip"
+        android:layout_marginRight="30dp"
+        android:id="@id/img_left"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/textColor"
+        android:text="热门推荐"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/img_cover"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_tip"
+        />
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:src="@drawable/icon_black_rect"
+        app:layout_constraintTop_toTopOf="@id/tv_tip"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tip"
+        app:layout_constraintLeft_toRightOf="@id/tv_tip"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/img_right"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="@color/textColor"
+        app:layout_constraintTop_toTopOf="@id/tv_tip"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tip"
+        app:layout_constraintLeft_toRightOf="@id/img_right"
+        android:layout_marginLeft="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

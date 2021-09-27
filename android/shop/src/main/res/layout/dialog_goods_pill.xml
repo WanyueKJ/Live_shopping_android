@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="310dp"
+     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contentView"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_thumb"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="长虹全自动洗衣机家用波轮8/9/10热烘干大容
+量25KG大小型洗脱一体"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_title"
+            android:maxLines="2"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:gravity="left"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="¥80.00"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/global"
+            android:layout_marginTop="13dp"
+            android:id="@+id/tv_price"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:textStyle="bold"
+            android:gravity="left" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/stake_line_share_goods"
+            android:layout_marginTop="9dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/img_small_progroam"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/small_program_tip"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/textColor2"
+                android:layout_marginLeft="20dp"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/sava_to_phone"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            android:background="@color/global"
+            android:textStyle="bold"
+            android:id="@+id/btn_save"
+            android:alpha="0.5"
+            android:enabled="false"
+            android:gravity="center" />
+    </LinearLayout>
+   
+    
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="3dp"
+        android:src="@drawable/icon_goods_pill_close"
+        android:layout_gravity="right"
+        android:id="@+id/btn_close"
+        />
+
+</FrameLayout>
+
+
+
+

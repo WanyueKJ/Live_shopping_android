@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/global</color>
+    <color name="colorPrimaryDark">@color/global</color>
+    <color name="colorAccent">@color/global</color>
+
+    <color name="global">#FF5121</color>
+    <color name="light_blue">#8FF1FF</color>
+    <color name="deep_blue">#1fc8f8</color>
+
+    <color name="background">@color/gray2</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#323232</color>
+    <color name="white">#ffffff</color>
+    <color name="gray1">#969696</color>
+
+    <color name="gray2">#fafafa</color>
+    <color name="gray3">#c8c8c8</color>
+    <color name="gray4">#10000000</color>
+    <color name="gray5">#B5B5B5</color>
+    <color name="gray6">#1e000000</color>
+    <color name="gray_border">#0d000000</color>
+    <color name="gray7">#E5E5E5</color>
+    <color name="gray_c7">#C7C7C7</color>
+    <color name="press_color">#E5E5E5</color>
+
+    <color name="gray9">#F6F7F9</color>
+    <color name="gray10">#A0A0A0</color>
+    <color name="gray11">#C7C7C7</color>
+    <color name="gray12">#979797</color>
+    <color name="gray13">#c9c9c9</color>
+    <color name="gray14">#EEEEEE</color>
+    <color name="gray_dc">#DCDCDC</color>
+    <color name="gray_fa"> #FAFAFA</color>
+    <color name="gray_e1">#e1e1e1</color>
+    <color name="gray_d2">#D2D2D2</color>
+
+    <color name="yellow">#fffa37</color>
+    <color name="yellow2">#f0cd08</color>
+    <color name="yellow3"> #FFC822</color>
+
+    <color name="blue1">#EFF6FF</color>
+    <color name="textColor2">#646464</color>
+    <color name="red">#FF424F</color>
+    <color name="red20">#ffff1b20</color>
+
+    <color name="red2">#FF5663</color>
+    <color name="red3">#F72332</color>
+    <color name="purplish_red">#FF78FF</color>
+    <color name="black">#000</color>
+    <color name="black1">#e6323232</color>
+    <color name="purple">#B587EE</color>
+    <color name="textColor3">#505050</color>
+    <color name="orange"> #FF5F19</color>
+    <color name="orange2">#FF623E</color>
+    <color name="orange3">#FFAC4B</color>
+
+    <color name="blue">#2D95FF</color>
+    <color name="blue2">#4385FF</color>
+
+
+    <color name="yellow4">#ffdd00</color>
+    <color name="pk_red">#f03a40</color>
+    <color name="pk_blue">#2a92f7</color>
+    <color name="yellow_7a">#ffffd57a</color>
+    <color name="yellow_f5">#F5FF5D</color>
+
+    <color name="line_color">#F5F5F5</color>
+
+    <color name="alpha_white_1f">#19FFFFFF</color>
+    <color name="alpha_white_2f">#33FFFFFF</color>
+    <color name="alpha_white_3f">#4CFFFFFF</color>
+    <color name="alpha_white_4f">#66FFFFFF</color>
+    <color name="alpha_white_5f">#80FFFFFF</color>
+    <color name="alpha_white_6f">#99FFFFFF</color>
+    <color name="alpha_white_7f">#B3FFFFFF</color>
+    <color name="alpha_white_8f">#CCFFFFFF</color>
+    <color name="alpha_white_9f">#E6FFFFFF</color>
+
+
+    <color name="alpha_black_1f">#19000000</color>
+    <color name="alpha_black_2f">#33000000</color>
+    <color name="alpha_black_3f">#4C000000</color>
+    <color name="alpha_black_4f">#66000000</color>
+    <color name="alpha_black_5f">#80000000</color>
+    <color name="alpha_black_6f">#99000000</color>
+    <color name="alpha_black_7f">#B3000000</color>
+    <color name="alpha_black_8f">#CC000000</color>
+    <color name="alpha_black_9f">#E6000000</color>
+
+
+
+</resources>

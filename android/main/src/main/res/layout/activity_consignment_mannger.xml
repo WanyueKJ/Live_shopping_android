@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".store.view.activity.ConsignmentManngerActivity">
+    <include layout="@layout/view_title"/>
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/white"
+        android:id="@+id/indicator"
+        />
+
+    <com.wanyue.common.custom.MyViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewPager"
+        app:canScroll="false"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        >
+        <Button style="@style/default_bottom_button"
+            android:layout_gravity="center"
+            android:text="@string/add_goods"
+            android:id="@+id/btn_add"
+            android:onClick="addGoods"
+            />
+    </FrameLayout>
+
+</LinearLayout>

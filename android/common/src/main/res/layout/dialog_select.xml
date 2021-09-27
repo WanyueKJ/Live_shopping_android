@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#EEE"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:text="@string/cancle"
+            android:textColor="@color/gray1"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:id="@+id/btn_cancel"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:text="@string/confirm"
+            android:textColor="@color/global"
+            android:textSize="13sp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:id="@+id/btn_confirm"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reclyView"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

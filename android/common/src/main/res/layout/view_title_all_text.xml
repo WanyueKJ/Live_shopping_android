@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="19dp"
+    android:id="@+id/vp_tab"
+    >
+    <TextView
+        android:id="@+id/btn_back"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="backClick"
+        android:gravity="center"
+        android:text="@string/cancle"
+        android:layout_marginLeft="11dp"
+        android:textColor="@color/gray1"
+        />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxWidth="300dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_17"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_right_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="right|center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:textColor="@color/enable_right_title"
+        android:textSize="@dimen/text_size_15"
+        />
+    <View android:layout_gravity="bottom"
+        style="@style/line2"
+        />
+
+</FrameLayout>

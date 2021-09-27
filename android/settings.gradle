@@ -1,0 +1,5 @@
+rootProject.name='直播带货demo'
+include ':app', ':mob', ':common',  ':live', ':baidu'
+include ':main'
+include ':shop'
+

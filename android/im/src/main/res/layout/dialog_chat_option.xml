@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_dialog_2"
+            android:gravity="center"
+            android:text="@string/im_forward_ta_home"
+            android:textColor="@color/textColor2"
+            android:textSize="14sp"
+            />
+
+        <View
+            style="@style/line2"
+            />
+
+        <TextView
+            android:id="@+id/btn_clear_chat_record"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_dialog_2"
+            android:gravity="center"
+            android:text="@string/im_clear_chat_record"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+
+        <View
+            style="@style/line2"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_dialog_2"
+            android:gravity="center"
+            android:textColor="@color/textColor2"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_dialog_2"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/gray3"
+        android:textSize="14sp"
+        />
+</LinearLayout>

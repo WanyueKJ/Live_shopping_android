@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wanyue.shop">
+
+    <application>
+        <activity android:name=".view.activty.GreateGoodsSearchActivity"></activity>
+        <activity android:name=".evaluate.activity.EvaluateListActivity" />
+        <activity android:name=".view.activty.ViewLogisticsActivity" />
+        <activity android:name=".view.activty.RefundOrderDetailActivity" />
+        <activity android:name=".view.activty.RefundListActivity" />
+        <activity android:name=".view.activty.OrderRefundActivity" />
+        <activity android:name=".view.activty.MyCollectGoodsActivity" />
+        <activity android:name=".view.activty.OrderPayResultActivity" />
+        <activity android:name=".view.activty.OrderDeatailActivity" />
+        <activity android:name=".view.activty.MyOrderActivity" />
+        <activity android:name=".view.activty.MyAddressActivity" />
+        <activity android:name=".view.activty.CreateAddressActivity" />
+        <activity
+            android:name=".view.activty.CommitOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activty.ShopCartActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activty.GoodsDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activty.ShopSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

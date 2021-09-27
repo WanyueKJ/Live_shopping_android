@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <root-path
+        name="root"
+        path=""/>
+    <files-path
+        name="files"
+        path=""/>
+
+    <cache-path
+        name="cache"
+        path=""/>
+    <external-files-path
+        name="external_file_path"
+        path=""/>
+    <external-cache-path
+        name="external_cache_path"
+        path=""/>
+    <!--external-path标签用来指定Uri共享的，name属性的值可以自定义，
+    path属性的值表示共享的具体位置，设置为空，就表示共享整个SD卡-->
+    <external-path
+        name="external"
+        path="phonelive"/>
+</paths>

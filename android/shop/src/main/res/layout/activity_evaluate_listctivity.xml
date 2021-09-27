@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".evaluate.activity.EvaluateListActivity">
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/default_padding"
+        android:id="@+id/vp_top_container"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F34F2D"
+                android:text="评分"
+                android:textSize="@dimen/text_size_13"
+                android:id="@+id/tv_evaluate_tip"
+                />
+            <com.wanyue.shop.view.widet.RatingStar
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/star"
+                android:layout_marginLeft="5dp"
+                app:starNumber="5"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="98%"
+                android:textColor="@color/global"
+                android:textSize="@dimen/text_size_13"
+                android:id="@+id/tv_feedback_rate"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_praise_rate"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_13"
+                android:id="@+id/tv_evaluate_changce"
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/vp_btn_evaluate"
+            >
+           <RadioButton
+               tools:text="@string/evaluate_btn_tip0"
+               android:id="@+id/btn_total"
+               style="@style/evaluate_button_style" />
+
+            <RadioButton
+                tools:text="@string/evaluate_btn_tip1"
+                android:id="@+id/btn_best"
+                style="@style/evaluate_button_style" />
+
+            <RadioButton
+                tools:text="@string/evaluate_btn_tip2"
+                android:id="@+id/btn_normal"
+                style="@style/evaluate_button_style" />
+
+            <RadioButton
+                tools:text="@string/evaluate_btn_tip3"
+                android:id="@+id/btn_bad"
+                style="@style/evaluate_button_style" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshView"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_home"
+        android:icon="@drawable/icon_main_bottom_home"
+        android:title="@string/home_page" />
+
+    <item
+        android:id="@+id/main_classify"
+        android:icon="@drawable/icon_main_bottom_classify"
+        android:title="分类"
+        />
+
+    <item
+        android:id="@+id/main_user"
+        android:icon="@drawable/icon_main_bottom_user"
+        android:title="我的" />
+</menu>

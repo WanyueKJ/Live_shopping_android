@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wanyue.common.custom.ShadowContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:containerCornerRadius="5dp"
+    app:containerDeltaLength="5dp"
+    app:containerShadowColor="#10000000"
+    app:containerShadowRadius="5dp"
+    android:id="@+id/vp_order_container"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color_white_radius_5"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        >
+        <com.wanyue.common.custom.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="店铺订单"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_order_tip"
+            android:layout_marginTop="10dp"
+            app:dt_left_drawable="@drawable/icon_vertical_line"
+            app:dt_left_width="3dp"
+            app:dt_left_height="13dp"
+            android:drawablePadding="7dp"
+            />
+        <com.wanyue.common.custom.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/check_all_order"
+            android:textColor="@color/gray3"
+            android:gravity="right|center_vertical"
+            android:minWidth="100dp"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_order_tip"
+            app:dt_right_drawable="@mipmap/icon_arrow_right"
+            app:dt_right_height="10dp"
+            app:dt_right_width="10dp"
+            android:drawablePadding="5dp"
+            android:id="@+id/btn_my_order"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="hha \n 111"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_tip"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_wait_received"
+            android:textSize="@dimen/text_size_12"
+            android:drawablePadding="3dp"
+            android:lineSpacingExtra="6dp"
+            android:id="@+id/btn_wait_delivered"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/btn_wait_delivered"
+            app:layout_constraintLeft_toRightOf="@id/btn_wait_delivered"
+            app:layout_constraintRight_toLeftOf="@+id/btn_wait_evaluated"
+            android:textSize="@dimen/text_size_12"
+            android:drawablePadding="3dp"
+            tools:text="hha \n 111"
+            android:lineSpacingExtra="6dp"
+            android:id="@+id/btn_wait_received"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/btn_wait_received"
+            app:layout_constraintLeft_toRightOf="@id/btn_wait_received"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/text_size_12"
+            android:drawablePadding="3dp"
+            android:lineSpacingExtra="6dp"
+            android:id="@+id/btn_wait_evaluated"
+            android:layout_marginRight="30dp"
+            tools:text="hha \n 111"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.wanyue.common.custom.ShadowContainer>
+
+

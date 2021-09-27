@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+    >
+
+    <TextView
+        android:id="@+id/music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/music_name"
+        android:layout_below="@id/music_name"
+        android:layout_marginTop="3dp"
+        android:textColor="#0099ff"
+        android:textSize="12sp"
+        />
+
+    <com.wanyue.live.custom.MusicProgressTextView
+        android:id="@+id/ptv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:mptv_bg_color="@color/gray3"
+        app:mptv_end_text="@string/choose"
+        app:mptv_line_color="@color/global"
+        app:mptv_start_text="@string/download"
+        />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/gray3"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:translationX="60dp"
+        />
+
+
+</RelativeLayout>

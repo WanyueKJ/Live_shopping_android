@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activty.ShopSearchActivity">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="136dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/global"
+        android:id="@+id/v_top_bg"
+        />
+
+    <include layout="@layout/title_simple"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+        android:id="@+id/vp_title"
+        />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_change_mannger"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/vp_title"
+        android:id="@+id/vp_search_container"
+        android:layout_marginLeft="@dimen/default_margin"
+        />
+
+    <com.wanyue.common.custom.CheckImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        app:deault_image="@drawable/icon_change_linear"
+        app:select_image="@drawable/icon_change_grid"
+        android:padding="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/vp_search_container"
+        app:layout_constraintTop_toTopOf="@+id/vp_search_container"
+        android:id="@+id/btn_change_mannger"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="6dp"
+        />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_top_bg"
+        android:layout_height="@dimen/sort_container_height"
+        android:id="@+id/vp_sort_container"
+        />
+
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/refreshView"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintTop_toBottomOf="@id/vp_sort_container"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

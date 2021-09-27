@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LiveStoreActivity">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:id="@+id/vp_tab"
+     android:orientation="vertical"
+     >
+     <ImageView
+         android:id="@+id/btn_back"
+         android:layout_width="39dp"
+         android:layout_height="39dp"
+         android:layout_gravity="center_vertical"
+         android:onClick="backClick"
+         android:padding="11dp"
+         android:src="@mipmap/icon_back_left2"
+         android:tint="@color/black"
+         />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:paddingLeft="@dimen/default_padding"
+         android:paddingRight="@dimen/default_padding"
+         android:layout_gravity="bottom"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="20dp"
+         >
+         <com.makeramen.roundedimageview.RoundedImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             tools:src="@mipmap/icon_heart_light"
+             app:riv_oval="true"
+             android:scaleType="centerCrop"
+             android:id="@+id/avatar"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tv_name"
+             tools:text="温精灵"
+             android:textColor="@color/textColor"
+             android:textSize="@dimen/text_size_15"
+             android:layout_marginLeft="@dimen/default_margin"
+             />
+         <Space
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             />
+         <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:src="@mipmap/icon_custom_service"
+             android:padding="10dp"
+             android:id="@+id/btn_custom_service"
+             />
+     </LinearLayout>
+ </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在售商品"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_12"
+            tools:text="1件"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_goods_count"
+            />
+
+
+    </LinearLayout>
+
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>

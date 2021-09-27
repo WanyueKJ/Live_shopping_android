@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabButton">
+        <attr name="tbn_icon_array_id" format="reference"/>
+        <attr name="tbn_tip" format="string"/>
+        <attr name="tbn_icon_size" format="dimension"/>
+        <attr name="tbn_text_size" format="dimension"/>
+        <attr name="tbn_text_color_checked" format="color"/>
+        <attr name="tbn_text_color_unchecked" format="color"/>
+        <attr name="tbn_checked" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CommonRefreshView">
+        <attr name="crv_refreshEnable" format="boolean"/>
+        <attr name="crv_loadMoreEnable" format="boolean"/>
+        <attr name="crv_layout" format="reference"/>
+        <attr name="crv_itemCount" format="integer"/>
+        <attr name="crv_mirror" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="MyViewPager">
+        <attr name="canScroll" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+        <attr name="ri_ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="DrawableTextView">
+        <attr name="dt_top_width" format="dimension"/>
+        <attr name="dt_top_height" format="dimension"/>
+        <attr name="dt_left_width" format="dimension"/>
+        <attr name="dt_left_height" format="dimension"/>
+        <attr name="dt_right_width" format="dimension"/>
+        <attr name="dt_right_height" format="dimension"/>
+        <attr name="dt_bottom_width" format="dimension"/>
+        <attr name="dt_bottom_height" format="dimension"/>
+        <attr name="dt_top_drawable" format="reference"/>
+        <attr name="dt_left_drawable" format="reference"/>
+        <attr name="dt_right_drawable" format="reference"/>
+        <attr name="dt_bottom_drawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout2">
+        <attr name="mll_span_count" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MyFrameLayout2">
+        <attr name="mfl_ratio" format="float"/>
+        <attr name="mfl_offestY" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="MyRelativeLayout2">
+        <attr name="mrl_ratio" format="float"/>
+        <attr name="mrl_scaleX" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout3">
+        <attr name="mll_height_percent" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout4">
+        <attr name="mll4_count" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="CoinGiveLayout">
+        <attr name="cgl_bg_color" format="color"/>
+        <attr name="cgl_radius" format="dimension"/>
+        <attr name="cgl_arrow_width" format="dimension"/>
+        <attr name="cgl_arrow_height" format="dimension"/>
+        <attr name="cgl_arrow_offset_x" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <attr name="rtb_star_count" format="integer"/>
+        <attr name="rtb_fill_count" format="integer"/>
+        <attr name="rtb_star_width" format="dimension"/>
+        <attr name="rtb_star_height" format="dimension"/>
+        <attr name="rtb_star_space" format="dimension"/>
+        <attr name="rtb_fill_drawable" format="reference"/>
+        <attr name="rtb_normal_drawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="WarpLinearLayout">
+        <attr name="grivate" format="enum"><!--对齐方式 !-->
+            <enum name="right" value="0"></enum>
+            <enum name="left" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+        <attr name="horizontal_Space" format="dimension"></attr>
+        <attr name="vertical_Space" format="dimension"></attr>
+        <attr name="isFull" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="MyLinearLayout6">
+        <attr name="mll_ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckImageView">
+        <attr name="select_image" format="integer"/>
+        <attr name="deault_image" format="integer"/>
+        <attr name="indeterminate_image" format="integer"/>
+        <attr name="enable_click" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ItemLinearLayout">
+        <attr name="leftTitle" format="string"/>
+        <attr name="left_Icon" format="integer"/>
+        <attr name="rightHint" format="string"/>
+        <attr name="rightContent" format="string"/>
+        <attr name="rightContentGravity" format="string"/>
+        <attr name="showArrow" format="boolean"/>
+        <attr name="imgContentUrl" format="string"/>
+        <attr name="isEdit" format="boolean"/>
+        <attr name="textStyle" format="string"/>
+        <attr name="textColor" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowContainer">
+        <attr name="containerShadowColor" format="color"/>
+        <attr name="containerShadowRadius" format="dimension"/>
+        <attr name="enable" format="boolean"/>
+        <attr name="containerDeltaLength" format="dimension"/>
+        <attr name="containerCornerRadius" format="dimension"/>
+        <attr name="deltaX" format="dimension"/>
+        <attr name="deltaY" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialHeader">
+        <attr name="mhPrimaryColor" format="color" />
+        <attr name="mhShadowColor" format="color" />
+        <attr name="mhShadowRadius" format="dimension"/>
+        <attr name="mhShowBezierWave" format="boolean"/>
+        <attr name="mhScrollableWhenRefreshing" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="BubbleLayout">
+        <attr name="bubbleBgColor" format="color"/>
+        <attr name="bubbleRadius" format="dimension"/>
+        <attr name="arrowWidth" format="dimension"/>
+        <attr name="arrowHeight" format="dimension"/>
+        <attr name="arrowPositionY" format="dimension"/>
+        <attr name="arrowDirecrion" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="top" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="BubbleLayout2">
+        <attr name="lookAt">
+            <enum name="left"   value="1"/>
+            <enum name="top"    value="2"/>
+            <enum name="right"  value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+
+        <attr name="lookPosition" format="dimension"/>
+        <attr name="lookWidth"    format="dimension"/>
+        <attr name="lookLength"   format="dimension"/>
+        <attr name="bubbleColor"  format="color"/>
+
+        <attr name="bubblePadding" format="dimension"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowX"      format="dimension"/>
+        <attr name="shadowY"      format="dimension"/>
+        <attr name="shadowColor"  format="color"/>
+    </declare-styleable>
+
+
+</resources>

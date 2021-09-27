@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/textColor"
+            android:text="账号"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColorHint="@color/textColor2"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_13"
+            android:hint="请输入微信账号"
+            android:id="@+id/tv_user_name"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/textColor"
+            android:text="提现"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColorHint="@color/textColor2"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_13"
+            android:hint="@string/min_advance_money"
+            android:inputType="number"
+            android:id="@+id/tv_advance_money"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"
+        />
+
+</LinearLayout>

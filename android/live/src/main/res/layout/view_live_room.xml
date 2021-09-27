@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/inner_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/group_1"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_live_anchor_avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingRight="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_avatar_placeholder"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxWidth="90dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                tools:text="昵称123"
+                />
+            <com.wanyue.common.custom.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8888"
+                android:textColor="#fff0f0f0"
+                android:textSize="@dimen/text_size_10"
+                tools:text="123"
+                android:layout_gravity="center_vertical"
+                app:dt_left_drawable="@mipmap/icon_like_image"
+                app:dt_left_width="9dp"
+                app:dt_left_height="9dp"
+                android:drawablePadding="3dp"
+                android:id="@+id/tv_follow_count"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_live_anchor_follow"
+            android:gravity="center"
+            android:text="@string/follow"
+            android:textColor="@color/white"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_11"
+            />
+    </LinearLayout>
+
+    <com.wanyue.live.custom.RoundTextView
+        android:id="@+id/tv_user_count"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        app:rtvBgColor="#4c000000"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignTop="@+id/group_1"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/btn_close"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:rtvRadius="20dp"
+        android:textSize="@dimen/text_size_10"
+        />
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/group_1"
+        android:src="@mipmap/icon_live_close"
+        />
+    <LinearLayout
+        android:id="@+id/btn_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/group_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_live_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_goods_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/current_shop_goods"
+            android:textSize="@dimen/text_size_13" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="55"
+            android:textColor="#ffff5121"
+            android:textSize="@dimen/text_size_10"
+            android:id="@+id/tv_goods_num"
+            />
+    </LinearLayout>
+
+    
+    <com.wanyue.common.custom.DrawableTextView
+        android:id="@+id/live_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/btn_goods"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_live_push_time"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone"
+        app:dt_left_drawable="@drawable/bg_push_time_point"
+        app:dt_left_height="4dp"
+        app:dt_left_width="4dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/gift_group_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_goods" />
+
+    <FrameLayout
+        android:layout_below="@id/gift_group_2"
+        android:id="@+id/gift_group_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         />
+
+    <FrameLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_below="@id/btn_goods"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/gif_gift_tip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@id/btn_goods"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_live_gift_tip"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:translationX="500dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_live_gift_3" />
+
+        <TextView
+            android:id="@+id/gif_gift_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/global_gift_tip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_goods"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_live_gift_tip_2"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:translationX="500dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_live_title_laba" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/global_gift_tip_0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/global_gift_tip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/global_gift_tip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        >
+        <com.yunbao.im.custom.FlowVideoLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/flowLayout_main"
+            />
+        <com.yunbao.im.custom.FlowVideoLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/flowLayout_vit"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_window_tools"
+        >
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="120dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:id="@+id/btn_mute"
+                >
+                <com.yunbao.common.custom.CheckImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:deault_image="@mipmap/icon_voice_close"
+                    app:select_image="@mipmap/icon_voice_open"
+                    android:id="@+id/ci_mute"
+                    app:enable_click="false"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="静音"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <Space  android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:id="@+id/btn_cal_flip"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/icon_cal_flip"
+                    android:id="@+id/img_cal_flip"
+                    android:enabled="false"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_camera"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <Space  android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:id="@+id/btn_camera"
+                >
+
+                <com.yunbao.common.custom.CheckImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:deault_image="@mipmap/icon_camera_close"
+                    app:select_image="@mipmap/icon_camera_open"
+                    android:id="@+id/ci_camera"
+                    app:enable_click="false"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/close_camera"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_camera_toggle"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bg_blcak_color_18_radius"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:src="@mipmap/ic_launcher_sys_msg"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_avator"
+                android:padding="1dp"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="紫霞仙子"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_user_name"
+                android:layout_toRightOf="@+id/img_avator"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00:00:11"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/tv_user_name"
+                android:id="@+id/tv_call_time"
+                android:layout_toRightOf="@+id/img_avator"
+                />
+        </RelativeLayout>
+
+        <com.yunbao.im.custom.CallButtonLayout
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:call_icon="@mipmap/icon_call_refuse"
+            app:call_text="@string/hang_up"
+            app:call_size="50dp"
+            app:call_text_color="@color/white"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal|bottom"
+            />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@mipmap/icon_narrow"
+            android:padding="10dp"
+            android:id="@+id/btn_narrow"
+            android:layout_marginTop="20dp"
+            />
+    </FrameLayout>
+    
+
+
+</FrameLayout>

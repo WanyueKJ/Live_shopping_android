@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请退款"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/gray1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bound_color_grayee_radius_15"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_apply_refund"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看物流"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/gray1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bound_color_grayee_radius_15"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_check_wuliu"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除订单"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/gray1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bound_color_grayee_radius_15"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_delete"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再次购买"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bg_color_global_radius_16"
+        android:id="@+id/btn_buy_again"
+        android:layout_marginRight="@dimen/default_margin"
+        />
+
+</LinearLayout>

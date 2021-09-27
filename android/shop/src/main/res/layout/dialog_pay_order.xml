@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@mipmap/icon_live_close_2"
+            android:padding="13dp"
+            android:layout_gravity="center_vertical|right"
+            android:id="@+id/btn_close"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@id/btn_wx"
+        >
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/icon_pop_pay_wx"
+            android:id="@+id/img_wx"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_13"
+            android:text="微信支付"
+            android:textColor="@color/textColor"
+            app:layout_constraintLeft_toRightOf="@id/img_wx"
+            android:id="@+id/tv_wx_pay"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_wx_tip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_11"
+            android:text="微信快捷支付"
+            android:textColor="@color/textColor2"
+            android:id="@+id/tv_wx_tip"
+            app:layout_constraintLeft_toRightOf="@id/img_wx"
+            app:layout_constraintTop_toBottomOf="@id/tv_wx_pay"
+            app:layout_constraintLeft_toLeftOf="@id/tv_wx_pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/btn_coin"
+        >
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/icon_pop_pay_coin"
+            android:id="@+id/img_coin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_13"
+            android:text="余额支付"
+            android:textColor="@color/textColor"
+            app:layout_constraintLeft_toRightOf="@id/img_coin"
+            android:id="@+id/tv_coin_pay"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_coin_tip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_11"
+            android:text="可用余额:"
+            android:textColor="@color/textColor2"
+            android:id="@+id/tv_coin_tip"
+            app:layout_constraintLeft_toRightOf="@id/img_coin"
+            app:layout_constraintTop_toBottomOf="@id/tv_coin_pay"
+            app:layout_constraintLeft_toLeftOf="@id/tv_coin_pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_11"
+            android:text="100"
+            android:textColor="@color/yellow3"
+            android:id="@+id/tv_coin_money"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_coin_pay"
+            app:layout_constraintLeft_toRightOf="@id/tv_coin_tip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        />
+
+</LinearLayout>

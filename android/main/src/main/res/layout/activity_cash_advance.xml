@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.CashAdvanceActivity">
+  <include layout="@layout/view_title"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:background="@color/white"
+      >
+    <FrameLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:orientation="vertical"
+       android:id="@+id/btn_bank"
+       android:onClick="selectBank"
+       android:gravity="center_vertical"
+       >
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"
+        />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/btn_wx"
+        android:onClick="selectWx"
+        android:gravity="center_vertical"
+        >
+    </FrameLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"
+        />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/btn_zfb"
+        android:onClick="selectZfb"
+        android:gravity="center_vertical"
+        >
+    </FrameLayout>
+    </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="5dp"
+      android:background="@color/line_color"
+      />
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/vp_pannel_container"
+      android:layout_marginTop="5dp"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:layout_marginLeft="@dimen/default_margin"
+      android:id="@+id/tv_used_money"
+      android:textSize="@dimen/text_size_10"
+      android:textColor="@color/gray1"
+      android:gravity="center_vertical"
+      tools:text="当前可提现金额:"
+      android:layout_marginBottom="15dp"
+      android:layout_marginTop="10dp"
+      />
+  <Button style="@style/default_bottom_button"
+      android:text="@string/wallet_7"
+      android:onClick="advance"
+      />
+
+
+</LinearLayout>

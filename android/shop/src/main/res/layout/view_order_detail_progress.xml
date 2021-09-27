@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wait_pay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_wait_delivered"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/textColor"
+        android:id="@+id/btn_wait_pay"
+        app:layout_constraintBottom_toTopOf="@id/point_wait_pay"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wait_to_delivered"
+        app:layout_constraintBottom_toBottomOf="@id/btn_wait_pay"
+        app:layout_constraintLeft_toRightOf="@id/btn_wait_pay"
+        app:layout_constraintRight_toLeftOf="@+id/btn_wait_received"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/textColor"
+        android:id="@+id/btn_wait_delivered"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wait_to_received"
+        app:layout_constraintBottom_toBottomOf="@id/btn_wait_delivered"
+        app:layout_constraintLeft_toRightOf="@id/btn_wait_delivered"
+        app:layout_constraintRight_toLeftOf="@+id/btn_wait_evaluated"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/textColor"
+        android:id="@+id/btn_wait_received"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wait_to_evaluated"
+        app:layout_constraintBottom_toBottomOf="@id/btn_wait_received"
+        app:layout_constraintLeft_toRightOf="@id/btn_wait_received"
+        app:layout_constraintRight_toLeftOf="@+id/btn_compeleted"
+        android:textSize="@dimen/text_size_12"
+        android:id="@+id/btn_wait_evaluated"
+        android:textColor="@color/textColor"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compeleted"
+        app:layout_constraintBottom_toBottomOf="@id/btn_wait_evaluated"
+        app:layout_constraintLeft_toRightOf="@id/btn_wait_evaluated"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/textColor"
+        android:id="@+id/btn_compeleted"
+        />
+
+
+
+    <!--下边部分-->
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_wait_pay"
+        app:layout_constraintRight_toRightOf="@id/btn_wait_pay"
+        app:layout_constraintTop_toBottomOf="@id/btn_wait_pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/icon_order_status_default"
+        android:id="@+id/point_wait_pay"
+        />
+    <View
+        app:layout_constraintTop_toTopOf="@id/point_wait_pay"
+        app:layout_constraintBottom_toBottomOf="@id/point_wait_pay"
+        app:layout_constraintLeft_toRightOf="@id/point_wait_pay"
+        app:layout_constraintRight_toLeftOf="@id/point_wait_delivered"
+        style="@style/order_detail_line_status" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_wait_delivered"
+        app:layout_constraintRight_toRightOf="@id/btn_wait_delivered"
+        app:layout_constraintTop_toBottomOf="@id/btn_wait_delivered"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/icon_order_status_default"
+        android:id="@+id/point_wait_delivered"
+        />
+
+    <View
+        app:layout_constraintTop_toTopOf="@id/point_wait_pay"
+        app:layout_constraintBottom_toBottomOf="@id/point_wait_pay"
+        app:layout_constraintLeft_toRightOf="@id/point_wait_delivered"
+        app:layout_constraintRight_toLeftOf="@id/point_wait_received"
+        style="@style/order_detail_line_status" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_wait_received"
+        app:layout_constraintRight_toRightOf="@id/btn_wait_received"
+        app:layout_constraintTop_toBottomOf="@id/btn_wait_received"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/icon_order_status_default"
+        android:id="@+id/point_wait_received"
+        />
+    <View
+        app:layout_constraintTop_toTopOf="@id/point_wait_pay"
+        app:layout_constraintBottom_toBottomOf="@id/point_wait_pay"
+        app:layout_constraintLeft_toRightOf="@id/point_wait_received"
+        app:layout_constraintRight_toLeftOf="@id/point_wait_evaluated"
+        style="@style/order_detail_line_status" />
+
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_wait_evaluated"
+        app:layout_constraintRight_toRightOf="@id/btn_wait_evaluated"
+        app:layout_constraintTop_toBottomOf="@id/btn_wait_evaluated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/icon_order_status_default"
+        android:id="@+id/point_wait_evaluated"
+        />
+
+
+    <View
+        app:layout_constraintTop_toTopOf="@id/point_wait_pay"
+        app:layout_constraintBottom_toBottomOf="@id/point_wait_pay"
+        app:layout_constraintLeft_toRightOf="@id/point_wait_evaluated"
+        app:layout_constraintRight_toLeftOf="@id/point_compeleted"
+        style="@style/order_detail_line_status" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_compeleted"
+        app:layout_constraintRight_toRightOf="@id/btn_compeleted"
+        app:layout_constraintTop_toBottomOf="@id/btn_compeleted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/icon_order_status_default"
+        android:id="@+id/point_compeleted"
+        />
+
+
+    <!--下边部分-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

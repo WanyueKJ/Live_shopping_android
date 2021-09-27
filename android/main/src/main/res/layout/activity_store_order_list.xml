@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".store.view.activity.StoreOrderListActivity">
+    <include layout="@layout/view_title"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/radio_group"
+        android:gravity="center_vertical"
+        >
+      <com.wanyue.main.view.widet.UnderlineRadioButton
+          android:layout_width="0dp"
+          android:layout_height="39dp"
+          android:text="@string/wait_pay"
+          android:layout_weight="1"
+          android:gravity="center"
+          app:underline_width="50dp"
+          app:underline_height="3dp"
+          android:button="@null"
+          android:checked="true"
+          app:underline_color="@color/global"
+          android:id="@+id/btn_wait_pay"
+          android:textColor="@color/fg_text_color"
+          />
+
+        <com.wanyue.main.view.widet.UnderlineRadioButton
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:text="@string/wait_to_delivered"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:underline_width="50dp"
+            app:underline_height="3dp"
+            android:button="@null"
+            app:underline_color="@color/global"
+            android:id="@+id/btn_wait_to_delivered"
+            android:textColor="@color/fg_text_color"
+            />
+
+        <com.wanyue.main.view.widet.UnderlineRadioButton
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:text="@string/delivered"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:underline_width="50dp"
+            app:underline_height="3dp"
+            android:button="@null"
+            app:underline_color="@color/global"
+            android:id="@+id/btn_delivered"
+            android:textColor="@color/fg_text_color"
+            />
+        <com.wanyue.main.view.widet.UnderlineRadioButton
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:text="@string/onther"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:underline_width="50dp"
+            app:underline_height="3dp"
+            android:button="@null"
+            android:id="@+id/btn_onther"
+            app:underline_color="@color/global"
+            android:textColor="@color/fg_text_color"
+            />
+
+    </RadioGroup>
+
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+</LinearLayout>

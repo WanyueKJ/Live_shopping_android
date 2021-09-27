@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+              android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootView"
+        android:layout_marginBottom="@dimen/default_margin"
+        >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1.6"
+            android:src="@mipmap/bg_live_playbill"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_bg"
+            />
+
+        <com.fxc.roundcornerlayout.RoundCornerRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_bg"
+            app:layout_constraintRight_toRightOf="@id/img_bg"
+            app:layout_constraintTop_toTopOf="@id/img_bg"
+            app:layout_constraintBottom_toTopOf="@id/tv_tip"
+            app:roundedCornerRadius="5dp"
+            app:roundTopRight="true"
+            app:roundTopLeft="true"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/vp_user_container"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:src="@mipmap/bg_test"
+                android:scaleType="centerCrop"
+                android:id="@+id/img_user_thumb"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                tools:src="@mipmap/icon_avatar_placeholder"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_avator"
+                android:scaleType="centerCrop"
+                app:riv_oval="true"
+                />
+
+
+            <com.wanyue.live.custom.RoundTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="乔知画小姐姐"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10"
+                android:layout_toRightOf="@+id/img_avator"
+                android:layout_alignTop="@+id/img_avator"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                app:rtvRadius="8dp"
+                android:id="@+id/tv_live_user_name"
+                app:rtvBgColor="#99000000"
+                />
+            <com.wanyue.common.custom.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dt_left_drawable="@drawable/round_white"
+                app:dt_left_width="2dp"
+                app:dt_left_height="2dp"
+                android:background="@drawable/bg_color_global_radius_13"
+                android:text="正在直播中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="2dp"
+                android:drawablePadding="3dp"
+                android:layout_alignLeft="@+id/tv_live_user_name"
+                android:layout_below="@+id/tv_live_user_name"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="知画教你穿衣搭配"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="18dp"
+                android:layout_below="@+id/img_user_thumb"
+                android:id="@+id/tv_live_tile"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv_live_tile"
+                android:background="@drawable/stake_line"
+                android:layerType="software"
+                android:layout_height="3dp"
+                android:id="@+id/line"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记得填啊你"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_10"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_share_name"
+                android:layout_alignLeft="@+id/tv_live_tile"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请您一起看直播"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_10"
+                android:layout_below="@+id/tv_share_name"
+                android:layout_marginTop="6dp"
+                android:id="@+id/tv_invite_tip"
+                android:layout_alignLeft="@+id/tv_live_tile"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长按识别二维码，进入直播间"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_10"
+                android:layout_below="@+id/tv_invite_tip"
+                android:layout_alignLeft="@+id/tv_live_tile"
+                android:layout_marginTop="@dimen/default_margin"
+                />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                tools:src="@drawable/ic_launcher_background"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_share_name"
+                android:layout_marginRight="@dimen/default_margin"
+                android:id="@+id/img_qr_code"
+                />
+        </com.fxc.roundcornerlayout.RoundCornerRelativeLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vp_user_container"
+            app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+            tools:text="万岳直播带货"
+            android:id="@+id/tv_tip"
+            android:translationY="-30dp"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg"
+        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/reclyView"
+        />
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wanyue.common.custom.ShadowContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="139dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:containerCornerRadius="5dp"
+    app:containerDeltaLength="5dp"
+    app:containerShadowColor="#10000000"
+    app:containerShadowRadius="5dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color_white_radius_5"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:orientation="vertical"
+        >
+        <com.wanyue.common.custom.DrawableTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="商家后台"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:dt_left_drawable="@drawable/icon_vertical_line"
+            app:dt_left_width="3dp"
+            app:dt_left_height="13dp"
+            android:drawablePadding="7dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="发布商品/管理订单请前往PC端商家后台"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="www.houtaidizhi.comwww.houtaidizhi.comwww.houtaidizhi.com"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/textColor"
+                android:id="@+id/tv_host"
+                android:singleLine="true"
+                android:maxWidth="230dp"
+                 />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="复制地址"
+                android:textSize="@dimen/text_size_10"
+                android:textColor="@color/global"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:id="@+id/btn_copy"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</com.wanyue.common.custom.ShadowContainer>
+
+

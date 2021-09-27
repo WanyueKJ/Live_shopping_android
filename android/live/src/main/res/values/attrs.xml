@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTextView">
+        <attr name="mt_radius" format="dimension"/>
+        <attr name="mt_checked" format="boolean"/>
+        <attr name="mt_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ProgressTextView">
+        <attr name="ptv_bg_color" format="color"/>
+        <attr name="ptv_fg_color" format="color"/>
+        <attr name="ptv_stroke_width" format="dimension"/>
+        <attr name="ptv_progress" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="FrameImageView">
+        <attr name="fiv_ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="PkProgressBar">
+        <attr name="ppb_minWidth" format="dimension"/>
+        <attr name="ppb_rate" format="float"/>
+        <attr name="ppb_left_color" format="color"/>
+        <attr name="ppb_right_color" format="color"/>
+        <attr name="ppb_left_color_stroke" format="color"/>
+        <attr name="ppb_right_color_stroke" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="MyFrameLayout3">
+        <attr name="mfl3_ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="GiftMarkView">
+        <attr name="gm_icon_res_1" format="reference"/>
+        <attr name="gm_icon_res_2" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MusicProgressTextView">
+        <attr name="mptv_start_text" format="string"/>
+        <attr name="mptv_end_text" format="string"/>
+        <attr name="mptv_bg_color" format="color"/>
+        <attr name="mptv_line_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="LrcTextView">
+        <attr name="ltv_progress" format="float"/>
+        <attr name="ltv_progressColor" format="color"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MyRelativeLayout1">
+        <attr name="mrl_radius" format="dimension"/>
+        <attr name="mrl_inner_r" format="dimension"/>
+        <attr name="mrl_inner_w" format="dimension"/>
+        <attr name="mrl_inner_h" format="dimension"/>
+        <attr name="mrl_inner_x" format="dimension"/>
+        <attr name="mrl_inner_y" format="dimension"/>
+        <attr name="mrl_line_m" format="dimension"/>
+        <attr name="mrl_line_mt" format="dimension"/>
+        <attr name="mrl_line_h" format="dimension"/>
+        <attr name="mrl_bg_color" format="color"/>
+    </declare-styleable>
+
+
+    <!--支持圆角的View-->
+    <declare-styleable name="RoundView">
+        <attr name="rtvBgColor" format="color"/>
+        <attr name="rtvBorderWidth" format="dimension"/>
+        <attr name="rtvBorderColor" format="dimension"/>
+        <attr name="rtvRadius" format="dimension"/>
+    </declare-styleable>
+
+
+
+</resources>

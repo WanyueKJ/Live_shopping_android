@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_search_back"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_live_pk_search"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="5dp"
+                android:padding="8dp"
+                android:src="@mipmap/icon_live_search"
+                />
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/live_pk_search_hint"
+                android:imeActionLabel="@string/search"
+                android:imeOptions="actionSearch"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line2"
+        />
+
+    <com.wanyue.common.custom.CommonRefreshView
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

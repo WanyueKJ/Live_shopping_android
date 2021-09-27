@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.wanyue.common.custom.refresh.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        app:mhShowBezierWave="false"
+        app:mhPrimaryColor="@color/transparent"
+        app:mhScrollableWhenRefreshing="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_data_container"
+        >
+
+        <com.wanyue.common.custom.refresh.LogRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            />
+
+        <ViewStub  android:id="@+id/empty_no_data"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:layout="@layout/empty_no_data"/>
+
+
+        <ViewStub  android:id="@+id/empty_load_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout="@layout/empty_load_failed"/>
+
+    </FrameLayout>
+
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlTextFailed="@string/refresh_footer_failed"
+        app:srlTextFinish="@string/refresh_footer_finish"
+        app:srlTextLoading="@string/refresh_footer_loading"
+        app:srlTextNothing="@string/refresh_footer_nothing"
+        app:srlTextPulling="@string/refresh_footer_pulling"
+        app:srlTextRefreshing="@string/refresh_footer_refreshing"
+        app:srlTextRelease="@string/refresh_footer_release"
+        />
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/view_title"/>
+
+    <FrameLayout
+        android:id="@+id/btn_lang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="settingClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lang_change"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/icon_arrow_right"
+            />
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/text_size_13"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/btn_room_manage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="settingClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/setting_room_manage"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/icon_arrow_right"
+            />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/btn_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:onClick="settingClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/setting_about_us"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/icon_arrow_right"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_check_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:onClick="settingClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/setting_check_update"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/btn_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:onClick="settingClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/setting_clear_cache_2"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16"
+            />
+    </FrameLayout>
+
+    <View
+        style="@style/line2"
+        />
+
+    <TextView
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:onClick="settingClick"
+        android:text="@string/setting_exit"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+
+        />
+
+</LinearLayout>

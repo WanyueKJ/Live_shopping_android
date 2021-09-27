@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".evaluate.activity.PublishEvaluateActivity">
+    <include layout="@layout/view_title"/>
+    <include layout="@layout/item_recly_order_goods_about"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品质量"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/textColor"
+                />
+            <com.wanyue.shop.view.widet.RatingStar
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/star_quality"
+                android:layout_marginLeft="20dp"
+                app:starNumber="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1分"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/text_size_14"
+                android:id="@+id/tv_quality_result"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务态度"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/textColor"
+                />
+            <com.wanyue.shop.view.widet.RatingStar
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/star_service"
+                android:layout_marginLeft="20dp"
+                app:starNumber="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1分"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/text_size_14"
+                android:id="@+id/tv_service_result"
+                android:layout_marginLeft="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FAFAFA"
+            android:minHeight="200dp"
+            android:padding="@dimen/default_padding"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="商品满足你的期待么？说说你的想法，分享给想买的他们吧～"
+                android:textSize="@dimen/text_size_14"
+                android:textColorHint="@color/gray3"
+                android:textColor="@color/textColor"
+                android:background="@null"
+                android:id="@+id/tv_comment"
+                android:gravity="left" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reclyView"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+
+        <Button style="@style/default_bottom_button"
+            android:text="@string/evaluate"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:id="@+id/btn_commit"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

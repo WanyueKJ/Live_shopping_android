@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clipChildren="false"
+    >
+
+    <View
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/icon_live_gift_anim_3"
+        />
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/icon_live_gift_anim_4"
+        android:translationX="-214dp"
+        />
+
+    <View
+        android:id="@+id/star"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="214dp"
+        android:background="@mipmap/icon_live_gift_anim_5"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="@color/global"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gift_icon"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/gift_group_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/mul_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FEE03A"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gift_count"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:singleLine="true"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+</FrameLayout>

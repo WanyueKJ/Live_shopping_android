@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/view_title"
+        />
+
+    <TextView
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/send"
+        android:textColor="@color/global"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/search_group"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/top"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_search_input_3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/icon_main_search"
+            android:tint="@color/gray1"
+            />
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/im_search_location"
+            android:imeActionLabel="@string/search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/gray1"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/search_group">
+
+        <com.tencent.tencentmap.mapsdk.map.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/location_marker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_location_marker"
+            android:translationY="-5dp"
+            />
+
+        <ImageView
+            android:id="@+id/btn_my_location"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/icon_btn_location"
+            />
+
+    </RelativeLayout>
+
+    <com.yunbao.common.custom.CommonRefreshView
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:crv_refreshEnable="false"
+        android:layout_below="@id/center"
+        android:background="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/search_result_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_group"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="invisible"
+        >
+
+        <com.yunbao.common.custom.CommonRefreshView
+            android:id="@+id/refreshView_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:crv_refreshEnable="false"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

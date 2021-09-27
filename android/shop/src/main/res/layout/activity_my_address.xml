@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activty.MyAddressActivity">
+    <include layout="@layout/view_title"/>
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/refreshView"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_color_global_radius_20"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:id="@+id/btn_add_addr"
+            >
+            <com.wanyue.common.custom.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dt_left_drawable="@drawable/icon_add_addr"
+                app:dt_left_width="18dp"
+                app:dt_left_height="23.5dp"
+                android:gravity="center"
+                android:text="@string/add_new_addr"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:drawablePadding="6dp"
+                />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SpreadManRankActivity">
+ <include  layout="@layout/view_global_title"/>
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       >
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="280dp"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:src="@drawable/bg_spread_rank"
+           android:scaleType="centerCrop"
+           android:id="@+id/img_bg"
+           />
+       <FrameLayout
+           android:layout_width="200dp"
+           android:layout_height="30dp"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:layout_marginTop="29dp"
+           android:padding="1.3dp"
+           android:id="@+id/vp_group_rank"
+           android:background="@drawable/bound_color_white_radius_15"
+           >
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:id="@+id/radio_group_rank"
+               >
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:text="@string/week_bank1"
+                   android:textSize="@dimen/text_size_13"
+                   android:textColor="@color/fg_rank_radio"
+                   android:layout_weight="1"
+                   android:button="@null"
+                   android:background="@drawable/checked_rank_person"
+                   android:checked="true"
+                   android:id="@+id/radio_button_week"
+                   android:gravity="center"/>
+               <RadioButton
+                   android:layout_width="100dp"
+                   android:layout_height="match_parent"
+                   android:text="@string/month_bank1"
+                   android:textSize="@dimen/text_size_13"
+                   android:textColor="@color/fg_rank_radio"
+                   android:button="@null"
+                   android:background="@drawable/checked_rank_person"
+                   android:id="@+id/radio_button_month"
+                   android:gravity="center" />
+           </RadioGroup>
+       </FrameLayout>
+
+       <include layout="@layout/view_spread_man_rank_head"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintBottom_toBottomOf="@id/img_bg"
+           android:layout_marginBottom="10dp"
+           />
+
+       <com.wanyue.common.custom.refresh.RxRefreshView
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/img_bg"
+           android:id="@+id/refreshView"
+           />
+
+
+       
+       
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

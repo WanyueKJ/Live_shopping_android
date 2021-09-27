@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_music_view"
+                android:minWidth="250dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:translationX="10dp"
+                android:translationY="150dp"
+
+    >
+
+    <TextView
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/end"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/btn_end"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btn_end"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <com.wanyue.live.music.LrcTextView
+        android:id="@+id/lrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_end"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:ltv_progressColor="@color/global"
+        />
+
+
+
+</RelativeLayout>
+

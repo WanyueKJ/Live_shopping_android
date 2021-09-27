@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:text="@string/im_no_sys_msg"
+    android:textColor="@color/gray1"
+    android:textSize="14sp"
+    android:layout_centerInParent="true"
+    />

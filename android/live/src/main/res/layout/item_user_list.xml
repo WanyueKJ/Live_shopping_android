@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_head"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        app:riv_oval="true"
+        tools:src="@color/global" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        tools:text="test" />
+
+    <com.wanyue.common.custom.DrawableTextView
+        android:layout_centerVertical="true"
+        android:textSize="13sp"
+        android:drawablePadding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        app:dt_left_drawable="@mipmap/icon_live_gift_zs"
+        app:dt_left_height="14dp"
+        android:id="@+id/tv_coin"
+        app:dt_left_width="14dp"
+        tools:text="test"
+        android:textColor="@color/textColor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray14"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:paddingLeft="@dimen/default_padding"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_name_phone"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="李二狗    18866668888"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/gray1"
+        android:textSize="@dimen/text_size_11"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name_phone"
+        app:layout_constraintRight_toRightOf="@+id/tv_name_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_phone"
+        tools:text="山东省 泰安市 泰山区 万达2号楼1606" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name_phone"
+        app:layout_constraintRight_toRightOf="@+id/tv_name_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tv_name_phone"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        >
+        <com.wanyue.common.custom.CheckImageView
+            app:deault_image="@drawable/icon_check_shop_cart_default"
+            app:select_image="@drawable/icon_check_shop_cart_select"
+            android:id="@+id/btn_set_default"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:translationX="-5dp"
+            />
+        <TextView
+            android:text="@string/set_detail_address"
+            android:layout_marginLeft="5dp"
+            style="@style/address_tint_text" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <com.wanyue.common.custom.DrawableTextView
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginRight="@dimen/default_margin"
+            android:text="@string/edit"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_13"
+            app:dt_left_drawable="@drawable/icon_addr_edit"
+            app:dt_left_width="16dp"
+            app:dt_left_height="16dp"
+            android:drawablePadding="6dp"
+            />
+        <com.wanyue.common.custom.DrawableTextView
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/delete"
+            android:gravity="center"
+
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_13"
+            app:dt_left_drawable="@drawable/icon_addr_delete"
+            app:dt_left_width="16dp"
+            app:dt_left_height="16dp"
+            android:drawablePadding="6dp"
+            app:layout_constraintRight_toRightOf="@+id/tv_name_phone"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

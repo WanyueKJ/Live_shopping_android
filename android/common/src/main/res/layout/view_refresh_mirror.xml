@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.wanyue.common.custom.refresh.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        app:mhShowBezierWave="false"
+        app:mhPrimaryColor="@color/transparent"
+        app:mhScrollableWhenRefreshing="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:overScrollMode="never"
+            />
+        <include layout="@layout/empty_no_data"/>
+        <include layout="@layout/empty_load_failed"/>
+    </FrameLayout>
+
+
+
+
+    <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlTextFailed="@string/refresh_header_failed"
+        app:srlTextFinish="@string/refresh_header_finish"
+        app:srlTextLoading="@string/refresh_header_loading"
+        app:srlTextPulling="@string/refresh_header_pulling"
+        app:srlTextRefreshing="@string/refresh_header_refreshing"
+        app:srlTextRelease="@string/refresh_header_release"
+        app:srlTextUpdate="@string/refresh_header_update"
+        />-->
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

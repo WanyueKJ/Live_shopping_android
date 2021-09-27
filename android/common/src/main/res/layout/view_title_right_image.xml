@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingTop="19dp"
+    android:id="@+id/fl_tab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:onClick="backClick"
+            android:padding="11dp"
+            android:src="@mipmap/icon_back_left2"
+            android:tint="@color/gray1"            />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/enable_right_title"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:id="@+id/img_title_right"
+            android:layout_centerVertical="true"
+            tools:src="@mipmap/icon_more_black"
+            android:padding="11dp"
+            />
+    </RelativeLayout>
+
+    <View android:layout_gravity="bottom"
+        style="@style/line2"
+        />
+
+</FrameLayout>

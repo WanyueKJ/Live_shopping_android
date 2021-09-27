@@ -1,0 +1,1211 @@
+<resources tools:ignore="MissingTranslation" android:locale="languageCode" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="refresh_header_pulling">下拉可以刷新</string>
+    <string name="refresh_header_refreshing">正在刷新</string>
+    <string name="refresh_header_loading">正在加载</string>
+    <string name="refresh_header_release">释放立即刷新</string>
+    <string name="refresh_header_finish">刷新完成</string>
+    <string name="refresh_header_failed">刷新失败</string>
+    <string name="refresh_header_update">上次更新 M-d HH:mm</string>
+
+    <string name="refresh_footer_pulling">加载更多</string>
+    <string name="refresh_footer_release">释放立即加载</string>
+    <string name="refresh_footer_loading">正在加载</string>
+    <string name="refresh_footer_refreshing">正在刷新</string>
+    <string name="refresh_footer_finish">加载完成</string>
+    <string name="refresh_footer_failed">加载失败</string>
+    <string name="refresh_footer_nothing">没有更多数据了</string>
+
+    <string name="black">拉黑</string>
+    <string name="black_ing">取消拉黑</string>
+
+    <string name="cash_input_wx_account">请输入微信账号</string>
+    <string name="cash_input_ali_account">请输入支付宝账号</string>
+    <string name="cash_input_ali_name">请输入支付宝账号姓名</string>
+    <string name="cash_type_ali">支付宝</string>
+    <string name="cash_type_wx">微信</string>
+    <string name="cash_type_bank">银行卡</string>
+    <string name="cash_delete">是否要删除该账户？</string>
+    <string name="cash_record">提现记录</string>
+    <string name="coin_give">赠送</string>
+    <string name="coin_balance">账户余额</string>
+    <string name="coin_balance_2">余额：</string>
+    <string name="coin_pay_ali">支付宝</string>
+    <string name="coin_pay_wx">微信支付</string>
+    <string name="coin_charge_success">充值成功</string>
+    <string name="coin_charge_failed">充值失败</string>
+    <string name="coin_ali_not_install">未安装支付宝</string>
+    <string name="coin_wx_not_install">未安装微信</string>
+    <string name="copy_link">复制链接</string>
+    <string name="copy_success">复制成功</string>
+
+    <string name="home_page">首页</string>
+    <string name="home_page_share_1">"%1$s"也在%2$s，~点击查看TA的故事</string>
+    <string name="home_page_share_2">TA有%1$s粉丝，快来围观呀！</string>
+
+    <string name="im_live_anchor_msg">Hi~我是主播，快来和我聊天吧。</string>
+    <string name="im_type_image">[图片]</string>
+    <string name="im_type_voide">[语音]</string>
+    <string name="im_type_location">[位置]</string>
+
+
+    <string name="live_shop_open">开启购物车</string>
+    <string name="live_shop_close">关闭购物车</string>
+    <string name="goods_add_taobao">淘宝商品</string>
+    <string name="goods_add_xcx">商城小程序</string>
+    <string name="goods_tip_1">商品链接(可粘贴淘宝店铺商品链接)</string>
+    <string name="goods_tip_2">商品名称(最多可输入20个字)</string>
+    <string name="goods_tip_3">原价</string>
+    <string name="goods_tip_4">现价</string>
+    <string name="goods_tip_5">确认添加商品</string>
+    <string name="goods_tip_6">商品简介(最多可输入50个字)</string>
+    <string name="goods_tip_7">商品图片</string>
+    <string name="goods_tip_8">查看次数：%1$s次</string>
+    <string name="goods_tip_9">(输入小程序中商品对应ID，将自动获取商品信息)</string>
+    <string name="goods_tip_10">商品名称</string>
+    <string name="goods_tip_11">商品简介</string>
+    <string name="goods_tip_12">商品ID</string>
+    <string name="goods_tip_13">获取商品信息</string>
+    <string name="goods_tip_14">查看同款商品</string>
+    <string name="goods_tip_16">广告链接无效</string>
+    <string name="goods_tip_17">在售商品</string>
+
+
+    <string name="goods_tip_18">去购买</string>
+    <string name="goods_tip_19">当前暂无在售商品</string>
+    <string name="goods_tip_20">全部商品 </string>
+    <string name="goods_tip_21">添加商品</string>
+    <string name="goods_tip_22">移除</string>
+    <string name="goods_tip_23">当前暂无在售商品\n点击右上角添加商品到购物车</string>
+    <string name="goods_tip_24">请输入商品名称</string>
+    <string name="goods_tip_25">您的店铺内暂无商品\n请先前往店铺内添加商品</string>
+    <string name="goods_tip_26">在售商品 </string>
+    <string name="goods_tip_27">进店逛逛</string>
+    <string name="goods_tip_28">推荐商品</string>
+    <string name="goods_tip_29">去购买</string>
+    <string name="goods_tip_30">下架</string>
+    <string name="goods_tip_31">关联商品</string>
+    <string name="goods_tip_32">查看同款商品</string>
+    <string name="goods_tip_33">重新上架</string>
+    <string name="goods_tip_34"> 删除后店铺内将不再显示此款商品\n确定要删除此款商品吗？</string>
+    <string name="goods_tip_35"> 下架后用户将无法购买此款商品\n确定要下架此款商品吗？</string>
+    <string name="goods_tip_36">请输入商品id</string>
+    <string name="goods_tip_37">管理下架</string>
+    <string name="goods_tip_38">已下架</string>
+    <string name="goods_tip_39">在售商品 (%1$s)</string>
+    <string name="goods_un_saled">下架商品</string>
+    <string name="live_send_gift">礼物</string>
+    <string name="live_send_gift_4">背包</string>
+    <string name="live_send_gift_5">道具</string>
+    <string name="live_send_gift_1">送</string>
+    <string name="live_send_gift_2">个</string>
+    <string name="live_send_gift_3">送了一个</string>
+    <string name="live_gift_send">赠送</string>
+    <string name="live_gift_send_lian">连送</string>
+    <string name="live_gift_send_lian_2">x</string>
+    <string name="live_gift_send_lian_3">连送 x</string>
+
+
+    <string name="im_input_gift">礼物</string>
+    <string name="im_input_location">位置</string>
+    <string name="im_choose_image">选择图片</string>
+    <string name="im_no_image">没有找到图片</string>
+    <string name="im_please_choose_image">请选择图片</string>
+    <string name="im_search_location">搜索地点</string>
+    <string name="im_location_failed">未获取到位置信息</string>
+    <string name="im_map_not_loaded">地图未加载</string>
+    <string name="im_address_failed">未获取到地址</string>
+
+
+    <string name="im_get_location_failed">获取位置失败</string>
+    <string name="im_follow_tip">点击关注，可及时看到对方动态</string>
+    <string name="im_press_say">按住 说话</string>
+    <string name="im_unpress_stop">松开 结束</string>
+    <string name="im_please_say">请说话...</string>
+    <string name="im_record_audio_too_short">录音时间太短</string>
+
+    <string name="im_no_sys_msg">暂无系统消息</string>
+    <string name="im_pri_chat">私聊</string>
+    <string name="im_charge_send">付费发送</string>
+    <string name="img_camera_cancel">取消拍照</string>
+    <string name="img_alumb_cancel">取消选择</string>
+    <string name="img_crop_cancel">取消裁剪</string>
+
+
+    <string name="live_share_to">分享至</string>
+
+
+    <string name="main_home">首页</string>
+    <string name="project_center">我的课程</string>
+    <string name="main_me">个人中心</string>
+    <string name="main_maintain_notice">维护通知</string>
+    <string name="main_input_invatation_code">请填写邀请码</string>
+    <string name="main_click_next_exit">再按一次退出</string>
+    <string name="mob_phone">手机</string>
+    <string name="mob_qq">QQ</string>
+    <string name="mob_qzone">QQ空间</string>
+    <string name="mob_wx">微信</string>
+    <string name="mob_wx_pyq">朋友圈</string>
+    <string name="mob_fb">Facebook</string>
+    <string name="mob_tt">推特</string>
+
+    <string name="permission_storage_refused">您拒绝了文件读写的权限，请到设置中修改</string>
+    <string name="permission_camera_refused">您拒绝了使用摄像头的权限，请到设置中修改</string>
+    <string name="permission_record_audio_refused">您拒绝了使用麦克风的权限，请到设置中修改</string>
+    <string name="permission_location_refused">您拒绝了使用定位的权限，请到设置中修改</string>
+    <string name="permission_read_phone_state_refused">您拒绝了读取手机信息的权限，请到设置中修改</string>
+    <string name="profit">我的收益</string>
+
+
+    <string name="setting">设置</string>
+    <string name="setting_exit">退出账号</string>
+    <string name="setting_clear_cache_ing">清除中</string>
+    <string name="setting_clear_cache">成功缓存清除</string>
+    <string name="setting_clear_cache_2">缓存清除</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">请输入要搜索的昵称或ID</string>
+    <string name="search_no_data">未找到相关内容</string>
+    <string name="share_type_qq">QQ</string>
+    <string name="share_type_qzone">QQ空间</string>
+    <string name="share_type_wx">微信</string>
+    <string name="share_type_wxpyq">朋友圈</string>
+    <string name="share_type_facebook">facebook</string>
+    <string name="share_type_twitter">twitter</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_cancel">分享取消</string>
+
+    <string name="version_update">版本更新</string>
+    <string name="version_immediate_use">立即使用</string>
+    <string name="version_not_update">暂不更新</string>
+    <string name="version_latest">已经是最新版本</string>
+    <string name="version_download_url_error">下载地址无效</string>
+
+    <string name="add">添加</string>
+    <string name="accept">接受</string>
+    <string name="all">全部</string>
+    <string name="alumb">相册</string>
+    <string name="cancel">取消</string>
+    <string name="camera">相机</string>
+    <string name="confirm">确定</string>
+    <string name="content_empty">请输入消息～</string>
+    <string name="choose">请选择</string>
+    <string name="choose_flie">选择文件</string>
+    <string name="cannot_follow_self">无法关注自己哦~</string>
+    <string name="dialog_tip">提示</string>
+    <string name="download">下载</string>
+    <string name="downloaded">已下载</string>
+
+    <string name="delete">删除</string>
+    <string name="end">结束</string>
+    <string name="hot">热门</string>
+    <string name="load_failure">网络请求失败</string>
+    <string name="net_work_broken">网络连接断开</string>
+    <string name="load_failure_2">请检查网络连接后重试~</string>
+    <string name="loading">加载中</string>
+    <string name="location">位置</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="no_data">空空如也</string>
+    <string name="near">附近</string>
+    <string name="num_wan">万</string>
+    <string name="please_wait">请稍等</string>
+    <string name="pri_msg">私信</string>
+    <string name="reload">重试</string>
+    <string name="refuse">拒绝</string>
+    <string name="save">保存</string>
+    <string name="send">发送</string>
+    <string name="count">数量</string>
+    <string name="im_clear_chat_record">清除聊天记录</string>
+    <string name="im_forward_ta_home">查看TA的主页</string>
+    <string name="recommend">推荐</string>
+    <string name="charge">充值</string>
+    <string name="wallet_coin_name">我的%1$s</string>
+    <string name="wallet_tip_1">请选择支付方式</string>
+    <string name="wallet_tip_3">已阅读并同意</string>
+    <string name="wallet_tip_4">请选择充值金额</string>
+    <string name="wallet_tip_5">未选中支付方式</string>
+    <string name="wallet_tip_6">未选择充值金额</string>
+
+    <string name="main_price_tip_2">收费标准说明</string>
+    <string name="search_id">ID：</string>
+    <string name="chat_coin_not_enough">余额不足</string>
+    <string name="chat_charge_pay_type">支付方式</string>
+    <string name="chat_charge_pay">立即支付</string>
+    <string name="login_status_Invalid">登录状态失效！</string>
+    <string name="open_vip">开通会员</string>
+    <string name="vip">会员</string>
+    <string name="vip_tip_1">您还不是VIP会员</string>
+    <string name="vip_tip_2">无法享受会员特权</string>
+    <string name="vip_tip_3">会员特权列表</string>
+    <string name="vip_tip_4">开通VIP</string>
+    <string name="vip_tip_5">续费VIP</string>
+    <string name="vip_tip_6">您已开通VIP会员</string>
+    <string name="vip_tip_7">会员到期时间：%1$s</string>
+    <string name="vip_center">会员中心</string>
+    <string name="vip_item_0_1">专属会员标识</string>
+    <string name="vip_item_0_2">会员头像标识，彰显尊贵身份</string>
+    <string name="vip_item_1_1">免费无限私信</string>
+    <string name="vip_item_1_2">私信无限制，聊天更随意</string>
+    <string name="vip_item_2_1">匹配约聊优惠</string>
+    <string name="vip_item_2_2">匹配有优惠，主播来排队</string>
+    <string name="vip_item_3_1">私密视频免费</string>
+    <string name="vip_item_3_2">私密视频免费观看，让TA对你无秘密</string>
+    <string name="vip_item_4_1">私密照片免费</string>
+    <string name="vip_item_4_2">私密照片免费观看，让TA对你无秘密</string>
+    <string name="vip_tip_8">开通会员</string>
+    <string name="vip_tip_9">立即开通</string>
+    <string name="vip_tip_10">金额:&#160;</string>
+    <string name="vip_tip_11">购买%1$s会员</string>
+    <string name="agent_tip">输入邀请码</string>
+
+
+    <!--7.18-->
+
+    <string name="setting_about_us">联系我们</string>
+    <string name="setting_check_update">版本更新</string>
+
+
+    <string name="wallet">我的%1$s</string>
+    <string name="wallet_tip_2">《用户充值协议》</string>
+
+    <string name="follow_cancel">取消关注</string>
+    <string name="follow_add">+ 关注</string>
+    <string name="im_pri_msg">私信</string>
+
+    <string name="cash">提现账户</string>
+    <string name="cash_account_empty">您当前还没设置提现账户</string>
+    <string name="cash_add_account">添加提现账户</string>
+    <string name="cash_account_type">账户类型</string>
+    <string name="cash_input_bank_user_name">请输入持卡人姓名</string>
+    <string name="cash_input_bank_account">请输入银行卡账号</string>
+    <string name="cash_input_bank_name">请输入银行名称</string>
+
+
+    <string name="im_msg">消息</string>
+    <string name="im_msg_ignore_unread">忽略未读</string>
+    <string name="im_msg_ignore_unread_2">已忽略未读消息</string>
+    <string name="im_msg_send_failed">消息发送失败</string>
+    <string name="im_send_too_fast">操作频繁</string>
+    <string name="im_you_are_blacked">你已经被拉黑</string>
+    <string name="im_no_msg">你还没有收到任何消息</string>
+
+    <string name="time_hour">小时</string>
+    <string name="time_minute">分</string>
+    <string name="time_second">秒</string>
+
+    <string name="xingzuo_00">白羊座</string>
+    <string name="xingzuo_01">金牛座</string>
+    <string name="xingzuo_02">双子座</string>
+    <string name="xingzuo_03">巨蟹座</string>
+    <string name="xingzuo_04">狮子座</string>
+    <string name="xingzuo_05">处女座</string>
+    <string name="xingzuo_06">天秤座</string>
+    <string name="xingzuo_07">天蝎座</string>
+    <string name="xingzuo_08">射手座</string>
+    <string name="xingzuo_09">摩羯座</string>
+    <string name="xingzuo_10">水瓶座</string>
+    <string name="xingzuo_11">双鱼座</string>
+
+
+    <string name="login">登录</string>
+    <string name="login_tip_1">登录即代表你已同意</string>
+    <string name="login_tip_2">《用户协议》</string>
+    <string name="login_tip_3">欢迎体验%1$s!</string>
+    <string name="login_input_phone">请输入手机号码</string>
+    <string name="login_input_email">请输入您的邮箱</string>
+    <string name="login_input_pwd">请输入密码</string>
+    <string name="login_input_pwd_1">请设置密码</string>
+    <string name="login_input_pwd_2">请确认登录密码</string>
+    <string name="login_input_pwd_3">请输入重置密码</string>
+    <string name="login_input_pwd_4">请输入推广人ID(选填)</string>
+
+    <string name="login_input_code">请输入验证码</string>
+    <string name="login_immediately_login">登录</string>
+    <string name="login_ing">登录中</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="login_auth_ing">正在授权登录</string>
+    <string name="login_auth_success">登录成功</string>
+    <string name="login_auth_failure">授权失败</string>
+    <string name="login_auth_cancle">授权取消</string>
+    <string name="login_find_pwd">确认并登陆</string>
+    <string name="login_pwd_forget">忘记密码</string>
+    <string name="find_pwd">找回密码</string>
+
+    <string name="reg_register">注册</string>
+    <string name="reg_register_and_login">注册并登陆</string>
+    <string name="reg_get_code">获取验证码</string>
+    <string name="reg_get_code_again">%1$ss后重新获取</string>
+    <string name="reg_pwd_error">密码不一致</string>
+    <string name="main_search_hint">搜索课程，老师</string>
+    <string name="game_all_class">全部分类</string>
+    <string name="game_sort_1">智能排序</string>
+    <string name="game_sort_2">不限性别</string>
+    <string name="game_sort_3">筛选</string>
+    <string name="game_sort_4">最新大神</string>
+    <string name="game_sort_5">只看男生</string>
+    <string name="game_sort_6">只看女生</string>
+    <string name="game_order_num">接单量</string>
+    <string name="game_order_num_1">接单&#160;%1$s次</string>
+    <string name="game_comment">评论</string>
+    <string name="game_skill">技能资质</string>
+    <string name="game_chat">聊天</string>
+    <string name="game_sort_level">游戏段位</string>
+    <string name="game_sort_feature">特色</string>
+    <string name="game_reset">重置</string>
+    <string name="search_empty">空空如也</string>
+    <string name="search_game">相关品类</string>
+    <string name="search_user">相关用户</string>
+    <string name="user_detail">资料</string>
+    <string name="skill">技能</string>
+    <string name="user_follow_0">+关注</string>
+    <string name="follow">关注</string>
+    <string name="following">已关注</string>
+    <string name="user_home_info">个人信息</string>
+    <string name="avatar">头像</string>
+    <string name="set_profile_nickname">请设置您的昵称</string>
+    <string name="set_profile_addr">请设置您的家乡</string>
+    <string name="nickname">昵称</string>
+    <string name="birthday">生日</string>
+    <string name="set_profile_birthday">请选择出生日期</string>
+    <string name="sex">性别</string>
+    <string name="set_profile_sex">请选择您的性别</string>
+    <string name="set_profile_avarar">请设置您的头像</string>
+    <string name="set_profile">设置个人资料</string>
+    <string name="set_profile_save">保存资料</string>
+    <string name="edit_profile_right_date">请选择正确的日期</string>
+    <string name="set_sex_tip">请选择性别，选择后无法修改</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+    <string name="follow_my_follow">我的关注</string>
+    <string name="follow_ta_follow">TA的关注</string>
+    <string name="follow_no_follow">你还没有关注的人</string>
+    <string name="follow_do_follow">赶快去关注自己感兴趣的人吧</string>
+    <string name="follow_no_follow_2">TA还没有关注的人</string>
+    <string name="fans">粉丝</string>
+    <string name="fans_my_fans">我的粉丝</string>
+    <string name="fans_ta_fans">TA的粉丝</string>
+    <string name="fans_no_fans">你还没有粉丝</string>
+    <string name="fans_do_fans">完善个人信息会让更多的人关注到你哦~</string>
+    <string name="fans_no_fans_2">TA还没有粉丝</string>
+    <string name="edit_profile">编辑资料</string>
+    <string name="voice">声音</string>
+    <string name="edit_profile_voice">设置声音</string>
+    <string name="edit_profile_age">年龄/星座</string>
+    <string name="edit_profile_age_1">请设置年龄</string>
+    <string name="edit_profile_city">家乡</string>
+    <string name="edit_profile_city_1">请选择您的家乡</string>
+    <string name="edit_profile_sign">签名</string>
+    <string name="edit_profile_sign_1">介绍下自己呗～</string>
+    <string name="edit_profile_sign_2">请设置签名～</string>
+    <string name="edit_profile_interest">兴趣</string>
+    <string name="edit_profile_interest_1">请选择您的爱好</string>
+    <string name="edit_profile_interest_2">选择你的兴趣(%1$s/5)</string>
+    <string name="edit_profile_job">职业</string>
+    <string name="edit_profile_job_1">请填写行业</string>
+    <string name="edit_profile_job_2">请填写你的职业</string>
+    <string name="edit_profile_school">学校</string>
+    <string name="edit_profile_school_1">请填写学校</string>
+    <string name="edit_profile_school_2">请填写你的学校</string>
+    <string name="edit_profile_interest_3">最多添加5个</string>
+    <string name="edit_profile_name_1">昵称最多输入20个字符</string>
+    <string name="edit_profile_voice_1">按住说话3-15s</string>
+    <string name="edit_profile_voice_2">请先录音</string>
+    <string name="my_skill">我的技能</string>
+    <string name="skill_choose">选择技能</string>
+    <string name="price">价格</string>
+    <string name="game_skill_label">技能标签</string>
+    <string name="game_ability">实力信息</string>
+    <string name="game_level">段位</string>
+    <string name="game_graph">技能图</string>
+    <string name="edit">编辑</string>
+    <string name="game_edit_tip">(选填项，完善信息可提高接单率哦)</string>
+    <string name="game_edit_intro">陪玩介绍</string>
+    <string name="game_voice">语音介绍</string>
+    <string name="game_edit_choose">请选择</string>
+    <string name="game_skill_tip">最多选择三个标签，将显示在您的技能资质页面</string>
+    <string name="main_price_tip_1">价格设置</string>
+    <string name="main_price_tip_3">等级不够，无法使用此价格</string>
+    <string name="main_price_tip_4">没有修改价格</string>
+    <string name="main_price_tip_5">价格说明</string>
+    <string name="main_price_tip_6">所需接单量</string>
+    <string name="main_price_tip_7">收费价格</string>
+    <string name="more">更多</string>
+    <string name="age">年龄</string>
+    <string name="play_error">播放失败</string>
+    <string name="my_skill_order_open">接单中</string>
+    <string name="my_skill_order_close">未开启</string>
+    <string name="wallet_1">我的余额</string>
+    <string name="wallet_2">余额</string>
+    <string name="wallet_3">仅用于在订单、打赏等场景消费，不可提现</string>
+    <string name="wallet_4">我的收入</string>
+    <string name="wallet_5">接单、打赏获得的云币收益，可提现</string>
+    <string name="wallet_6">收益</string>
+    <string name="wallet_7">提现</string>
+
+
+
+
+    <string name="detail">明细</string>
+    <string name="profit_choose_account">请选择提现账户</string>
+    <string name="profit_amount">请输入要提取的金额</string>
+    <string name="profit_get_money">可提取金额</string>
+    <string name="profit_cash">立即提现</string>
+    <string name="im_order">订单消息</string>
+    <string name="im_system_msg">官方公告</string>
+    <string name="im_send_msg">我来说几句～.</string>
+    <string name="im_send_msg_2">发送消息</string>
+    <string name="im_input_img">图片</string>
+    <string name="im_input_camera">拍摄</string>
+    <string name="order_all_coin_1">小计:</string>
+    <string name="order_all_coin">总额:</string>
+    <string name="order_submit">提交订单</string>
+    <string name="order_buy_skill">购买技能</string>
+    <string name="order_service_time">服务时间</string>
+    <string name="order_service_time_2">请设置服务时间</string>
+    <string name="order_order_num">单数</string>
+    <string name="order_count">数量:</string>
+    <string name="order_des">备注</string>
+    <string name="order_des_hint">简单说下你的要求吧，50字以内</string>
+    <string name="order_confirm">确认订单</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="tomorrow2">后天</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_detail_skill">品类</string>
+    <string name="time">时间</string>
+    <string name="order_detail_coin">费用</string>
+    <string name="order_total">合计:</string>
+    <string name="order_tip">请稍等大神接单确认哦，确认后订单开始</string>
+    <string name="order_status_wait">待服务</string>
+    <string name="order_status_cancel">已取消</string>
+    <string name="order_status_tips">请尽快选择大神，超时后订单将失效</string>
+    <string name="order_snap_status_tips">请尽快抢单，订单超时后将失效</string>
+
+    <string name="order_status_doing">进行中</string>
+    <string name="order_status_done">已完成</string>
+    <string name="order_status_time_out">已超时</string>
+    <string name="order_status_done_2">历史订单</string>
+    <string name="order_status_reject">已拒绝</string>
+    <string name="order_status_pay">已支付:</string>
+    <string name="order_status_payback">已退款</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_cancel_reason">取消原因</string>
+    <string name="submit">提交</string>
+    <string name="order_cancel_reason_1">请选择取消原因</string>
+    <string name="order_next">再次下单</string>
+    <string name="order_last_tip">仅显示近三个月的订单记录</string>
+    <string name="order_center">订单中心</string>
+    <string name="order_cancel_1">确定取消此订单吗？</string>
+    <string name="order_msg">订单消息</string>
+    <string name="order_profit">预计收入</string>
+    <string name="set_order">下单</string>
+    <string name="get_order">接单</string>
+    <string name="order_get_detail">接单详情</string>
+    <string name="order_fee">平台手续费</string>
+    <string name="done">完成</string>
+    <string name="order_comment_1">您觉得本次服务怎么样</string>
+    <string name="submit_comment">提交评论</string>
+    <string name="order_comment_hint">亲，大神技能水平、服务态度如何？简单评价一下吧</string>
+    <string name="order_comment_hint_1">简单评价一下客户吧</string>
+    <string name="order_comment">评价服务</string>
+    <string name="pay">支付</string>
+    <string name="order_comment_tip_0">1分</string>
+    <string name="order_comment_tip_1">2分</string>
+    <string name="order_comment_tip_2">3分</string>
+    <string name="order_comment_tip_3">4分</string>
+    <string name="order_comment_tip_4">非常好</string>
+    <string name="order_comment_tip_5">极不满意</string>
+    <string name="order_comment_tip_6">不满意</string>
+    <string name="order_comment_tip_7">满意</string>
+    <string name="order_comment_tip_8">非常满意</string>
+    <string name="order_comment_fen">分</string>
+    <string name="order_done_tip">请确保服务结束后再完成订单，完成后钱款将进入对方账户</string>
+    <string name="order_comment_chat">联系大神</string>
+    <string name="order_comment_to">去评价</string>
+    <string name="order_comment_star">星级评价</string>
+    <string name="evaluate">评价</string>
+    <string name="order_comment_user">评价用户</string>
+    <string name="order_done">完成订单</string>
+    <string name="order_accpet_tip">完成接单，超时后订单自动取消</string>
+    <string name="order_comment_chat_2">联系用户</string>
+    <string name="skill_order_num">%1$s个技能接单中</string>
+    <string name="order_error">订单错误</string>
+    <string name="pay_failure">支付失败</string>
+    <string name="lang_en">英文</string>
+    <string name="lang_zh">简体中文</string>
+    <string name="lang_change">语言切换</string>
+    <string name="face">表情</string>
+    <string name="flash_order">快速下单</string>
+    <string name="order_tip_1">滴滴一下 马上响应</string>
+    <string name="level">等级</string>
+    <string name="sel_time">选择时间</string>
+    <string name="publish">发布</string>
+    <string name="all_skill">全部品类</string>
+    <string name="publish_succ">发布成功</string>
+    <string name="publish_tip1"><![CDATA[您可以在 消息>滴滴订单 中查看 接单的大神信息]]></string>
+    <string name="know">知道了</string>
+    <string name="is_new">最新</string>
+    <string name="pub_des_tip">分享你的想法......</string>
+    <string name="at_location">所在位置</string>
+    <string name="related_skills">关联技能</string>
+    <string name="pub_dynamics">发布动态</string>
+    <string name="no_show_location">不显示位置</string>
+    <string name="no_choose">不选择</string>
+    <string name="max_select_photo_length">最多选择%1$d张图片</string>
+    <string name="compelete">完成</string>
+
+    <string name="photo_compelete">完成(%1$d/%2$d)</string>
+    <string name="all_photo">所有照片</string>
+    <string name="all_video">所有视频</string>
+
+
+
+    <string name="record">录音</string>
+    <string name="click_record">点击可录音</string>
+    <string name="click_pause">点击可暂停</string>
+    <string name="voice_audition">试听</string>
+    <string name="voice_pause">暂停</string>
+    <string name="preview">预览</string>
+    <string name="use_video">使用视频</string>
+    <string name="forgive_edit_tip">确定放弃当前编辑内容？</string>
+    <string name="my_dynamic">我的动态</string>
+    <string name="login_get_code">获取验证码</string>
+
+
+    <string name="login_get_code_again">重新获取</string>
+    <string name="login_phone_error">请输入正确的手机号码</string>
+    <string name="login_get_code_please">请获取验证码</string>
+    <string name="my_photo">我的相册</string>
+    <string name="upload">上传</string>
+    <string name="examing">审核中</string>
+    <string name="un_cross">未通过</string>
+    <string name="dynamic">动态</string>
+    <string name="visit">来访</string>
+    <string name="browse_footprints">浏览足迹</string>
+    <string name="near_visit">最近来访</string>
+    <string name="visit_your_page">访问了你的主页</string>
+    <string name="foot_onther_page">访问了%1$s的主页</string>
+    <string name="man_onther">他</string>
+    <string name="woman_onther">她</string>
+    <string name="visit_record_tip">仅显示最近30天的来访记录</string>
+    <string name="foot_record_tip">仅显示最近30天的浏览记录</string>
+    <string name="snatch_hall">抢单大厅</string>
+    <string name="didi_order">滴滴订单</string>
+    <string name="xiangqing">详情</string>
+    <string name="select_great">选择大神</string>
+    <string name="report">举报</string>
+    <string name="select_report_reson">选择举报理由</string>
+    <string name="report_dynamic_tip">更多详细信息请在说明框中描述（选填)</string>
+    <string name="wait_onther_accept">等待对方接受邀请...</string>
+    <string name="invite_your_video_call_tip">邀请你视频通话</string>
+    <string name="invite_you_call_audio_tip">邀请你语音通话</string>
+    <string name="hang_up">挂断</string>
+    <string name="answer">接听</string>
+    <string name="cancl_call">取消了通话</string>
+    <string name="refuse_call">拒绝了通话</string>
+    <string name="video">视频</string>
+    <string name="audio">音频</string>
+    <string name="change_camera">切换摄像头</string>
+    <string name="close_camera">关闭摄像头</string>
+    <string name="open_camera">开启摄像头</string>
+    <string name="hand_free">免提</string>
+
+
+
+
+
+
+    <string name="user">用户</string>
+    <string name="now_snap">立即抢单</string>
+    <string name="snaping">抢单中</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="please_sel_cancle_reason">请选择取消原因</string>
+    <string name="please_sel_report_reason">请选择举报理由</string>
+
+    <string name="no_limit">不限</string>
+    <string name="time_cut_down">倒计时 : </string>
+    <string name="cost">费用</string>
+    <string name="order_take_detail">接单详情</string>
+    <string name="platform_handling_fee">平台手续费 ：</string>
+    <string name="estimated_revenue">预计收入：</string>
+    <string name="comment_reply">回复</string>
+    <string name="not_down_self_order">不能下自己的单</string>
+    <string name="video_say_something">说点什么吧...</string>
+    <string name="rob_sofa_tip">赶紧来抢沙发吧</string>
+    <string name="comment">评论(%1$s)</string>
+    <string name="comment_cannot_self">不能给自己点赞</string>
+    <string name="comment_expand">展开更多评论</string>
+    <string name="comment_collapsed">收起</string>
+    <string name="received_orders_nums">接单 %1$s 次</string>
+    <string name="no_people_see_u">还没有人来看过你</string>
+    <string name="no_people_foot">你还没有查看过其他人</string>
+    <string name="no_update_photo">你还没有上传过照片</string>
+    <string name="must_attention_between">互相关注后，才可使用该功能</string>
+    <string name="visit_num">第%1$s次访问您</string>
+    <string name="clear_empty">清空</string>
+    <string name="im_call_tip">[通话]</string>
+    <string name="no_publish_dynamic_tip">你还没有发布动态</string>
+    <string name="no_dynamic_tip">TA还没有发布过动态</string>
+    <string name="no_photo_tip">TA还没有上传过照片</string>
+    <string name="no_grean_man_snap_tip">还没有大神抢你的订单</string>
+    <string name="cancle">取消</string>
+
+    <!--2019.12.13-->
+    <string name="chat_room">聊天室</string>
+    <string name="open_live">开启聊天室</string>
+    <string name="live_cover">添加封面</string>
+    <string name="live_title">直播间标题</string>
+    <string name="title">标题</string>
+    <string name="live_notice">直播间公告</string>
+    <string name="live_input_title_tip">请输入直播间标题，最多20字</string>
+    <string name="live_input__notic_tip">请输入直播间公告，最多200字</string>
+    <string name="now_live">立即开启</string>
+    <string name="boss_position">老板位</string>
+    <string name="reward">打赏</string>
+    <string name="live_chat_tip">退下让我说～</string>
+    <string name="lower_wheat">下麦</string>
+    <string name="up_wheat" >上麦</string>
+    <string name="open_wheat">开麦</string>
+    <string name="join">参加</string>
+    <string name="order">订单</string>
+    <string name="duration">时长</string>
+
+    <string name="online_num">在线 :%1$s</string>
+    <string name="out_live_room">退出聊天室</string>
+    <string name="close_live_room">关闭聊天室</string>
+    <string name="live_room_closed">聊天室已关闭</string>
+    <string name="accumulative_to">累计在线人数</string>
+    <string name="return_home_page">返回首页</string>
+    <string name="room_detail">房间详情</string>
+    <string name="online_detail">在线列表</string>
+    <string name="contribution_list">贡献榜</string>
+
+    <string name="skip">跳过</string>
+
+    <string name="user_down_wheat">%1$s已下了%2$s号麦</string>
+    <string name="wheat_no_greate_man_tip">当前麦上没有大神</string>
+    <string name="wheat_speak_tip1">轮流发言中,老板不能上麦</string>
+    <string name="gift_tip">%1$s 打赏了 %2$s %3$sx%4$s</string>
+    <string name="gift_tip2">%1$s 打赏了 %2$s %3$s个%4$s</string>
+    <string name="im_system_main">系统消息</string>
+
+    <string name="host_audio_introduce">请上传一段录音作为自我介绍</string>
+    <string name="application_for_submission">提交申请</string>
+    <string name="record_tips">按住说话%1$d-%2$ds</string>
+    <string name="information_audit_tip1">认证信息审核中...</string>
+    <string name="information_audit_tip2">认证信息审核未通过</string>
+    <string name="information_audit_tip3">3个工作日内会有审核结果，请耐心等待</string>
+    <string name="use">使用</string>
+    <string name="selected">已选</string>
+    <string name="collect">收藏</string>
+    <string name="agree">同意</string>
+    <string name="no_sign_tip">对方很懒，什么都没留下～</string>
+    <string name="up_load">正在上传</string>
+
+    <string name="empty_tag"></string>
+    <string name="feedback">意见反馈</string>
+    <string name="edit_profile_avatar">点击更换头像</string>
+    <string name="edit_profile_nickname">名字最长为7位</string>
+    <string name="edit_profile_update_nickname">修改昵称</string>
+    <string name="edit_profile_update_sign">修改签名</string>
+
+
+    <string name="live_gift_luck_tip">恭喜%1$s获取%2$sx%3$s倍</string>
+    <string name="live_gift_luck_tip_2">幸运礼物说明</string>
+    <string name="live_gift_luck_tip_3">道具礼物说明</string>
+    <string name="live_gift_prize_pool_1">当前奖池等级</string>
+    <string name="live_gift_prize_pool_2">当前奖池金额</string>
+    <string name="live_gift_prize_pool_3">Lv.%1$s</string>
+    <string name="live_level_danmu_limit">发送弹幕，需要到达%1$s级</string>
+
+
+    <string name="edit_profile_name_max">最多可输入8个字</string>
+    <string name="edit_profile_name_empty">请输入昵称</string>
+    <string name="edit_profile_not_update">未修改资料</string>
+    <string name="edit_profile_sign_empty">请输入签名</string>
+    <string name="right">正确</string>
+    <string name="error">错误</string>
+    <string name="select_area">选择地区</string>
+    <string name="address">地址</string>
+    <string name="blacklist">黑名单</string>
+    <string name="well_come_to_live_app">欢迎体验万岳直播带货系统</string>
+    <string name="live_start">开始直播</string>
+    <string name="record_cancel">录制失败</string>
+
+
+
+    <string name="live_link_mic_2">连麦互动</string>
+    <string name="live_link_mic_3">结束连麦</string>
+    <string name="live_link_mic_4">允许连麦</string>
+    <string name="live_link_mic_5">禁止连麦</string>
+    <string name="link_mic_wait">发起连麦请求</string>
+    <string name="link_mic_pk_wait">发起PK请求</string>
+    <string name="link_mic_exit">退出连麦</string>
+    <string name="link_mic_anchor_not_response">当前主播暂时无法接通</string>
+    <string name="link_mic_anchor_not_response_2">对方无响应</string>
+    <string name="link_mic_anchor_busy">主播正在忙</string>
+    <string name="link_mic_anchor_busy_2">对方主播正在忙</string>
+    <string name="link_mic_refuse">主播拒绝了您的连麦请求</string>
+    <string name="link_mic_refuse_2">对方主播拒绝了您的连麦请求</string>
+    <string name="link_mic_refuse_pk">对方主播拒绝了您的PK请求</string>
+    <string name="link_mic_anchor_close">对方主播退出连麦</string>
+    <string name="link_mic_pk_accpet">对方主播接受了您的连麦请求，开始连麦</string>
+    <string name="link_mic_apply_waiting">您已申请，请稍等</string>
+    <string name="link_mic_anchor_accept">主播接受了您的连麦请求，开始连麦</string>
+    <string name="link_mic_anchor_accept_2">对方主播接受了您的连麦请求，开始连麦</string>
+    <string name="link_mic_anchor_accept_pk">主播接受了您的PK请求，开始PK</string>
+    <string name="link_mic_failed_2">连麦推流失败，已退出连麦</string>
+    <string name="link_mic_apply">连麦请求已发送~</string>
+    <string name="link_mic_apply_pk">PK请求已发送~</string>
+    <string name="link_mic_pk_wait_2">对方发起PK</string>
+    <string name="link_mic_not_bgm">连麦时候无法播放背景音乐</string>
+    <string name="link_mic_close_bgm">连麦时需要关闭背景音乐</string>
+    <string name="live_record">直播记录</string>
+    <string name="live_record_no_title">无标题</string>
+    <string name="live_record_watch">人看过直播</string>
+    <string name="live_game_cannot_link_mic">游戏状态不能进行连麦哦~</string>
+    <string name="live_link_mic_cannot_game">连麦状态不能进行游戏哦~</string>
+    <string name="live_link_mic_cannot_link">主播连麦中，请等会儿再试哦～</string>
+    <string name="live_link_mic_cannot_link_2">当前正在进行连麦~</string>
+    <string name="live_link_mic_cannot_pk">你已经在PK中</string>
+    <string name="live_link_mic_pk_1">我方</string>
+    <string name="live_link_mic_pk_2">对方</string>
+    <string name="live_coin_not_enough">余额不足，是否要充值？</string>
+    <string name="live_online_anchor">当前在线主播</string>
+    <string name="link_mic_play_game">对方主播在游戏中</string>
+    <string name="live_pk_invite">邀请连麦</string>
+    <string name="live_pk_invite_2">已邀请</string>
+    <string name="live_pk_search_hint">请输入您要搜索的主播昵称或ID</string>
+    <string name="live_no_live_pk">暂时没有主播</string>
+    <string name="live_pk_time_1">PK时间</string>
+    <string name="live_pk_time_2">惩罚时间</string>
+
+
+
+    <string name="live_my_live_room">我的直播间</string>
+    <string name="live_my_room">我的房间</string>
+    <string name="live_admin">管理员</string>
+    <string name="live_user_black">拉黑用户</string>
+    <string name="live_user_shut_up">禁言用户</string>
+    <string name="live_user_shut_up_list">禁言用户列表</string>
+    <string name="live_admin_room">&#160;的直播间</string>
+    <string name="live_admin_shut_up_cancel">解除禁言</string>
+    <string name="live_user_black_list">拉黑用户列表</string>
+    <string name="live_no_shut_up">没有被禁言用户</string>
+    <string name="live_no_black">没有被拉黑用户</string>
+    <string name="live_no_admin_room">你还不是管理员</string>
+    <string name="live_admin_black_cancel">解除拉黑</string>
+
+
+
+
+    <string name="red_pack_1">直播间红包</string>
+    <string name="red_pack_2">给当前直播间观众发红包</string>
+    <string name="red_pack_3">拼手气红包</string>
+    <string name="red_pack_4">平均红包</string>
+    <string name="red_pack_5">恭喜发财，大吉大利</string>
+    <string name="red_pack_6">发红包</string>
+    <string name="red_pack_7">请输入金额</string>
+    <string name="red_pack_8">请输入数量</string>
+    <string name="red_pack_9">共%1$s个红包</string>
+    <string name="red_pack_10">抢</string>
+    <string name="red_pack_11">派发了一个即时红包</string>
+    <string name="red_pack_12">派发了一个延时红包</string>
+    <string name="red_pack_13">抢</string>
+    <string name="red_pack_14">查看领取详情》</string>
+    <string name="red_pack_15">恭喜你!</string>
+    <string name="red_pack_16">抢到 %1$s 派发的%2$s红包</string>
+    <string name="red_pack_17">%1$s 的红包</string>
+    <string name="red_pack_18">已存入「我的%1$s」</string>
+    <string name="red_pack_19">已领取%1$s个，共%2$s%3$s</string>
+    <string name="red_pack_20">未抢到</string>
+    <string name="red_pack_21">倒计时结束后可抢</string>
+    <string name="red_pack_22">在直播间发红包啦！快去抢哦～</string>
+    <string name="red_pack_23">单个金额</string>
+    <string name="red_pack_24">总金额</string>
+    <string name="live_room_last">已经是最后一个</string>
+    <string name="live_input_password">请输入房间密码</string>
+    <string name="live_password_error">输入密码错误</string>
+
+
+
+    <string name="live_setting_gap">永久禁言</string>
+    <string name="live_setting_gap_2">本场禁言</string>
+    <string name="live_setting_admin">设为管理</string>
+    <string name="live_setting_admin_cancel">取消管理</string>
+    <string name="live_setting_admin_list">管理员列表</string>
+    <string name="live_setting_close_live">关闭直播</string>
+    <string name="live_setting_close_live_2">禁用直播</string>
+    <string name="live_setting_forbid_account">禁用账户</string>
+    <string name="live_admin_count">当前管理员</string>
+    <string name="live_kicked">被踢出房间</string>
+    <string name="live_kicked3">%1$s已经被您踢出房间</string>
+
+    <string name="kicked">踢出</string>
+
+    <string name="live_shut">被永久禁言</string>
+    <string name="live_shut_2">被本场禁言</string>
+    <string name="live_set_admin">被设为管理员</string>
+    <string name="live_set_admin_cancel">被取消管理员</string>
+    <string name="live_kicked_2">你已经被踢出房间</string>
+    <string name="live_illegal">涉嫌违规，被下播</string>
+    <string name="live_user_home_con">贡献榜</string>
+    <string name="live_user_home_detail">资料</string>
+    <string name="live_anchor_leave">主播离开一下，精彩不中断，不要走开哦</string>
+    <string name="live_anchor_come_back">主播回来了！</string>
+    <string name="live_push_failed">推流失败</string>
+    <string name="live_push_failed_1">摄像头开启失败</string>
+    <string name="live_push_failed_2">麦克风开启失败</string>
+    <string name="live_no_data">暂时没有主播开播</string>
+    <string name="live_no_data_2">赶快开启你的直播吧~</string>
+    <string name="live_no_data_3">你关注的主播没有开播</string>
+    <string name="live_no_data_4">赶快去看看其他主播的直播吧~</string>
+    <string name="live_no_data_5">赶快去其他频道逛逛吧~</string>
+    <string name="live_no_data_6">暂无视频</string>
+    <string name="live_no_data_7">赶快发布自己是视频吧</string>
+    <string name="live_no_data_8">近没有主播开播~</string>
+    <string name="live_no_data_9">去首页看看其他主播的直播吧～</string>
+    <string name="live_no_data_10">你还没有发布过动态~</string>
+    <string name="live_no_data_11">快去分享一下你的心情吧～</string>
+    <string name="live_no_data_12">暂无动态~</string>
+    <string name="live_no_data_13">去推荐页看看吧～</string>
+    <string name="live_no_data_14">TA还没有发布过动态</string>
+    <string name="live_no_data_15">去看看其他分类的视频吧～</string>
+    <string name="live_no_live_record_1">你最近没有开过直播</string>
+    <string name="live_no_live_record_2">赶快去开场直播体验下吧</string>
+    <string name="live_no_live_record_3">TA最近没有开过直播</string>
+    <string name="live_choose_live_class">请选择直播分类</string>
+    <string name="live_follow_anchor">关注了主播</string>
+    <string name="live_report">确定举报？</string>
+    <string name="live_lighted">点亮了</string>
+
+
+    <string name="live_beauty">美颜</string>
+    <string name="live_camera">翻转</string>
+    <string name="live_flash">闪光灯</string>
+    <string name="live_music">伴奏</string>
+    <string name="live_share">分享</string>
+    <string name="live_game">游戏</string>
+    <string name="live_red_pack">红包</string>
+    <string name="live_link_mic">连麦</string>
+    <string name="live_open_flash">只有后置摄像头才能开启闪光灯</string>
+    <string name="live_open_flash_error">打开闪光灯失败</string>
+    <string name="live_end_live">是否要结束直播？</string>
+    <string name="global_gift">%1$s&#160;在%2$s的直播间送出&#160;%3$s</string>
+    <string name="live_end">直播已结束</string>
+    <string name="live_back">返回首页</string>
+    <string name="live_duration">直播时长</string>
+    <string name="live_votes">收获</string>
+    <string name="live_watch_num">观看人数</string>
+    <string name="live_end_ing">关播中</string>
+    <string name="live_open_alba">开启弹幕，</string>
+    <string name="live_say_something">和大家说点什么...</string>
+    <string name="live_tiao">条</string>
+    <string name="live_gift_dao_tip">发送了%1$s道具礼物</string>
+    <string name="music_url_empty">音乐链接为空</string>
+
+
+    <string name="live_cover_2">更换封面</string>
+    <string name="live_title_hint">给直播写个标题吧</string>
+    <string name="live_class">频道</string>
+    <string name="live_class_choose">选择直播频道</string>
+
+
+    <string name="live_play_error">播放失败</string>
+    <string name="live_gift_xi_zhong">喜中</string>
+    <string name="beauty_init_error">美颜初始化异常，无法使用</string>
+
+
+
+    <string name="music_no_local_music">暂无下载歌曲</string>
+    <string name="music_lrc_not_found">歌词未找到</string>
+    <string name="music_not_found">歌曲未找到</string>
+    <string name="music">音乐</string>
+    <string name="music_volume">音量</string>
+    <string name="music_no_data">暂无音乐</string>
+    <string name="music_no_data_collect">你还没有收藏任何音乐</string>
+    <string name="music_no_data_class_1">暂无此类音乐</string>
+    <string name="music_no_data_class_2">去看看其他音乐类型吧</string>
+    <string name="money_symbol">￥</string>
+
+
+
+   <string name="added">已添加</string>
+    <string name="ge">个</string>
+    <string name="live_play_error_2">视频格式不支持</string>
+
+
+
+    <string name="guard_choose_duration">选择守护时长</string>
+    <string name="guard_right">选择特权</string>
+    <string name="guard_buy">立即开通</string>
+    <string name="guard_buy_2">开通守护</string>
+    <string name="guard_buy_3">续费守护</string>
+    <string name="guard_my">我的</string>
+    <string name="guard_guard">守护</string>
+    <string name="guard_week_con">本周贡献</string>
+    <string name="guard_no_data">成为TA的第一个守护</string>
+    <string name="guard_tip_0">快去为喜欢的主播开通守护吧</string>
+    <string name="guard_tip_1">您是当前主播的月守护\n守护日期截止到</string>
+    <string name="guard_tip_2">您是当前主播的年守护\n守护日期截止到</string>
+    <string name="guard_gift_tip">年守护专属礼物</string>
+    <string name="guard_no_data_2">你还没有守护哦</string>
+    <string name="guard_buy_tip">您为当前主播的年守护\n无法开通7天/月守护</string>
+    <string name="guard_buy_tip_2">您为当前主播的月守护，开通年守护将覆盖您的月守护时长，是否开通？</string>
+    <string name="guard_buy_tip_3">您将花费%1$s%2$s，为主播开通%3$s</string>
+    <string name="guard_name_1">7天守护</string>
+    <string name="guard_name_2">月守护</string>
+    <string name="guard_name_3">年守护</string>
+    <string name="guard_list">守护榜</string>
+    <string name="guard_buy_msg">守护了主播</string>
+
+
+
+    <string name="live">直播</string>
+    <string name="live_anchor">主播</string>
+    <string name="live_room_type">房间类型</string>
+    <string name="live_class_tip">注意选择适合自己的频道。直播过程中，若运营人员发现选择的频道和直播内容不相符的情况，会调整您的直播频道。</string>
+    <string name="live_set_pwd">请设置房间密码</string>
+    <string name="live_set_fee">请设置收费金额\n（收益以直播结束显示为准）</string>
+    <string name="live_set_pwd_empty">请设置房间密码</string>
+    <string name="live_set_fee_empty">请设置收费金额</string>
+    <string name="live_time_fee">收费金额</string>
+    <string name="live_choose_charge">选择收费</string>
+    <string name="live_you_are_shut">你已经被禁言</string>
+    <string name="live_shut_up">禁言</string>
+    <string name="live_shut_cancle">取消禁言</string>
+
+    <string name="live_url_contain_zh">视频地址包含中文，无法播放</string>
+    <string name="live_guard">守护</string>
+
+    <string name="live_enter_room">进入了直播间</string>
+
+    <string name="live_liang">靓</string>
+    <string name="live_user_send">送出</string>
+    <string name="live_user_get">收入</string>
+    <string name="live_user_city_empty">城市未设置</string>
+    <string name="live_contribute">礼物贡献榜</string>
+    <string name="live_setting_kick">踢人</string>
+
+    <string name="music_search">搜索歌曲</string>
+    <string name="im_input_voice">语音输入</string>
+    <string name="please_apply_ask_permisson">请同意对应的权限</string>
+    <string name="playbill_share_tip">直播带货用%1$s</string>
+    <string name="current_shop_goods">本场销售商品：</string>
+    <string name="if_out_login_tip">确定要退出登录？</string>
+    <string name="person_num">%1$s人</string>
+    <string name="income_from_consignment">代销收益：</string>
+    <string name="save_succ">保存成功</string>
+    <string name="featured">精选</string>
+    <string name="featured2">精选商品</string>
+
+    <string name="search_live_room">搜索直播间</string>
+    <string name="goods_nums">%1$s\n宝贝</string>
+    <string name="good_watch">%1$s人观看</string>
+    <string name="my_order">我的订单</string>
+    <string name="wait_pay">待付款</string>
+    <string name="check_all_order">查看全部订单</string>
+    <string name="wait_to_delivered">待发货</string>
+    <string name="delivered">已发货</string>
+    <string name="wait_to_received">待收货</string>
+    <string name="wait_to_evaluated">待评价</string>
+
+    <string name="refund">退款</string>
+    <string name="my_service">我的服务</string>
+    <string name="my_store">我的店铺</string>
+    <string name="search_goods_name">搜索商品名称</string>
+    <string name="search_goods">搜索商品</string>
+
+    <string name="buy_now">立即购买</string>
+    <string name="day_greate_select">今日优选</string>
+    <string name="greate_select">优选</string>
+
+    <string name="sale_num">%1$s人已买</string>
+    <string name="sale_num_2">已销%1$s件</string>
+    <string name="class_goods_tip">商品分类</string>
+    <string name="sales">销量</string>
+    <string name="new_product">新品</string>
+    <string name="goods_list">商品列表</string>
+    <string name="default_tag">默认</string>
+    <string name="shop_cart">购物车</string>
+    <string name="customer_service">客服</string>
+    <string name="add_shop_cart">加入购物车</string>
+    <string name="coupon_add_point">优惠券:</string>
+    <string name="coupon">优惠券</string>
+    <string name="integral_add_point">赠积分:</string>
+    <string name="integral_tip_1">赠送%1$s积分</string>
+    <string name="stock_tip">库存:%1$s%2$s</string>
+    <string name="stock_tip2">库存:%1$s</string>
+    <string name="sale_num_tip">销量:%1$s%2$s</string>
+    <string name="evaluate_tip">用户评价(%1$s)</string>
+    <string name="high_praise_rate">好评率</string>
+    <string name="original_tip">原价:¥%1$s</string>
+    <string name="specs">规格</string>
+    <string name="select_specs_tip">请选择规格</string>
+    <string name="small_program_tip">长按识别小程序 立即购买</string>
+    <string name="sava_to_phone">保存到手机</string>
+    <string name="please_select_spec">请选择规格</string>
+    <string name="goods_num">商品数量</string>
+    <string name="mannger">管理</string>
+    <string name="all_select">全选(%1$s)</string>
+    <string name="place_an_order">立即下单</string>
+    <string name="invalid_goods">失效商品</string>
+    <string name="goods_is_invaild">该商品已失效</string>
+    <string name="select_goods_tip">请选择商品</string>
+    <string name="collect_succ">收藏成功</string>
+    <string name="set_addr">设置收货地址</string>
+    <string name="goods_field_tip">属性：%1$s</string>
+    <string name="user_price_min">满%1$s元可用</string>
+    <string name="no_limit_time" >不限时</string>
+    <string name="please_inpu_address_user_name">请输入姓名</string>
+    <string name="address_user">姓名</string>
+    <string name="phone_num">联系电话</string>
+    <string name="please_input_address_phone_num">请输入联系电话</string>
+    <string name="in_area">所在地区</string>
+    <string name="detail_address">详细地址</string>
+    <string name="please_input_detail_address">请填写具体地址</string>
+    <string name="new_address">添加地址</string>
+    <string name="edit_address">修改地址</string>
+    <string name="save2">立即保存</string>
+    <string name="set_detail_address">设为默认地址</string>
+    <string name="address_mannger">地址管理</string>
+    <string name="add_new_addr">添加新地址</string>
+    <string name="express_fee">快递费用</string>
+    <string name="remarks">备注信息</string>
+    <string name="total_num_jian">共%1$s件</string>
+    <string name="total_num_jian2">共%1$s件商品</string>
+    <string name="now_settlement">立即结算</string>
+    <string name="no_user_copon">不使用优惠券</string>
+    <string name="free_postage">免运费</string>
+    <string name="points_deduction">积分抵扣</string>
+    <string name="coin_pay_coin">余额支付</string>
+    <string name="use_coin">可用余额:%1$s</string>
+    <string name="order_message">订单信息</string>
+    <string name="user_order_total">消费订单:\t%1$s\t\t\t总消费:\t %2$s</string>
+
+
+    <string name="mail_001">待付款\n\n%1$s</string>
+    <string name="mail_002">待发货\n\n%1$s</string>
+    <string name="mail_003">待收货\n\n%1$s</string>
+    <string name="mail_004">待评价\n\n%1$s</string>
+    <string name="mail_005">退款</string>
+    <string name="mail_006">已完成\n\n%1$s</string>
+    <string name="custom_service_tip1">联系客服</string>
+    <string name="copy">复制</string>
+    <string name="compeleted">已完成</string>
+    <string name="no_pay">未支付</string>
+    <string name="payed">已支付</string>
+    <string name="no_full_monty">余额不足</string>
+
+    <string name="order_detail_tip0">订单编号：</string>
+    <string name="order_detail_tip1">下单时间：</string>
+    <string name="order_detail_tip2">支付状态：</string>
+    <string name="order_detail_tip3">支付方式：</string>
+    <string name="order_detail_tip4">支付金额：</string>
+    <string name="order_detail_tip5">运费：</string>
+    <string name="order_detail_tip6">实付款</string>
+    <string name="order_detail_tip7">配送方式：</string>
+    <string name="order_detail_tip8">快递公司：</string>
+    <string name="order_detail_tip9">快递号：</string>
+
+
+    <string name="order_detail_tip10">收货人：</string>
+    <string name="order_detail_tip11">联系电话：</string>
+    <string name="order_detail_tip12">收货地址：</string>
+
+
+    <string name="order_detail_failed_reason">失败原因：</string>
+
+
+    <string name="collect_goods">商品收藏</string>
+    <string name="check_detail">查看详情</string>
+    <string name="spread_tip1"></string>
+    <string name="spread_tip2"></string>
+    <string name="spread_tip3"></string>
+    <string name="spread_tip4"></string>
+    <string name="spread_tip6"></string>
+    <string name="spread_tip7"></string>
+    <string name="spread_tip8"></string>
+    <string name="spread_tip9"></string>
+    <string name="spread_tip10"></string>
+    <string name="spread_tip_11"></string>
+    <string name="spread_tip_12"></string>
+    <string name="spread_tip_13"></string>
+    <string name="my_spread"></string>
+
+
+    <string name="invite_tip">邀请您加入%1$s</string>
+    <string name="invite_qr_code_tip">—— 长按识别或扫描二维码进入 ——</string>
+    <string name="save_pill">保存海报</string>
+    <string name="spread_pill_tip">分销海报</string>
+    <string name="spread_result_tip1">%1$s 人\n %2$s 单\n %3$s 元</string>
+    <string name="search_spread_tip">点击搜索会员名称</string>
+
+    <string name="add_time_tip">加入时间:%1$s</string>
+    <string name="spread_tip_14">本月累计推广：%1$s单</string>
+    <string name="spread_tip15">暂无返佣</string>
+    <string name="spead_tip16">订单编号%1$s\n下单时间：%2$s</string>
+    <string name="spread_tip19">返佣 :</string>
+
+    <string name="week_rank">周排行</string>
+    <string name="month_rank">月排行</string>
+    <string name="spread_tip17">您目前暂无排名</string>
+    <string name="spread_tip18">您目前的排名 %1$s 名</string>
+    <string name="week_bank1">周榜</string>
+    <string name="month_bank1">月榜</string>
+    <string name="used_money">当前可提现金额：%1$s</string>
+    <string name="min_advance_money">最低提现金额%1$s</string>
+    <string name="evaluate_goods">商品评价</string>
+    <string name="tv_refund_num">退货件数</string>
+    <string name="tv_refund_money">退款金额</string>
+    <string name="refund_reason">退款原因</string>
+    <string name="delivery">送货</string>
+    <string name="deliver_goods">发货</string>
+
+    <string name="view_logistics">查看物流</string>
+    <string name="copy_no">复制单号</string>
+
+    <string name="evaluate_btn_tip0">全部(%1$s)</string>
+    <string name="evaluate_btn_tip1">好评(%1$s)</string>
+    <string name="evaluate_btn_tip2">中评(%1$s)</string>
+    <string name="evaluate_btn_tip3">差评(%1$s)</string>
+    <string name="service_name">店小二：</string>
+    <string name="profit_coin_empty">请输入正确的金额</string>
+    <string name="profit_coin_error">金额超过可提现金额</string>
+    <string name="profit_coin_error2">可提现金额不能为0</string>
+    <string name="order_today">今日订单</string>
+    <string name="order_total2">累计订单</string>
+    <string name="onther">其他</string>
+    <string name="add_goods">添加商品</string>
+    <string name="saled_num">已售%1$s件</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="attent_follow_count">关注 %1$s | 粉丝 %2$s</string>
+    <string name="login_immediately_register">立即注册</string>
+    <string name="phone_register">手机号注册</string>
+    <string name="reapply">重新申请</string>
+    <string name="get_code_tip">恭喜您获得%1$s积分,购买商品时可抵现哦～</string>
+    <string name="i_know">我知道了</string>
+    <string name="follow_succ">关注成功</string>
+    <string name="cancle_follow_succ">已取关</string>
+    <string name="gift_profit">礼物收益</string>
+    <string name="profit_tip_1">总%1$s数</string>
+    <string name="profit_tip_2">可提现%1$s数</string>
+    <string name="profit_tip_3">输入要提取的%1$s数</string>
+    <string name="live_set_manage">设为管理</string>
+    <string name="live_cancel_manage">取消管理</string>
+    <string name="live_close_live">关闭直播</string>
+    <string name="live_online_auidence">在线观众</string>
+
+    <string name="chat_shutup_time">请选择禁言时间</string>
+    <string name="setting_room_manage">房间管理</string>
+    <string name="live_shutup_tip">您已经被%1$s</string>
+
+    <string name="alipay">支付宝支付</string>
+    <string name="wxpay">微信支付</string>
+    <string name="confirm_charge">确认充值</string>
+</resources>
+
+
+
+

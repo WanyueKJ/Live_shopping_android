@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:src="@mipmap/icon_back"
+            android:tint="@color/textColor"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line2"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_follow_group"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/btn_close_follow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="7dp"
+            android:src="@mipmap/icon_chat_follow_close"
+            android:tint="@color/gray1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/im_follow_tip"
+            android:textColor="@color/gray1"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="44dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_follow"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/follow"
+            android:textColor="@color/global"
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray2"
+        android:overScrollMode="never"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_room_input"
+            android:gravity="center_vertical"
+            android:hint="@string/im_send_msg"
+            android:imeActionLabel="@string/send"
+            android:imeOptions="actionSend"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/gray1"
+            android:textSize="15sp"
+            />
+
+        <com.yunbao.common.custom.DrawableCheckBox
+            android:id="@+id/btn_face"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTint="@color/gray1"
+            android:paddingRight="10dp"
+            app:dt_right_drawable="@drawable/bg_chat_btn_face"
+            app:dt_right_height="26dp"
+            app:dt_right_width="26dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

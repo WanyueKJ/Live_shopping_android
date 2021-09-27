@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#e6ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <CheckBox
+        android:id="@+id/danmu"
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/bg_input_danmu_switch"
+        android:button="@null"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_live_input"
+        android:gravity="center_vertical"
+        android:hint="@string/live_say_something"
+        android:imeActionLabel="@string/send"
+        android:imeOptions="actionSend"
+        android:maxLength="50"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/gray3"
+        android:textSize="14sp"
+        />
+
+
+    <com.wanyue.common.custom.MyRadioButton
+        android:id="@+id/btn_send"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/bg_live_input_btn"
+        android:button="@null"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
+

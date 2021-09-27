@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="MainActvivityTheme" parent="AppTheme">
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="spread_pill_style" parent="AppTheme">
+        <item name="android:colorBackground">@color/gray3</item>
+    </style>
+
+    <style name="red_point_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_point</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">13dp</item>
+        <item name="android:minHeight">13dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+</resources>

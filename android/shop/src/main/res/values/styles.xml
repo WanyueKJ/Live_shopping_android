@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="shop_cart_check">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+
+    <style name="address_tint_text">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="address_input_content">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColorHint">@color/gray5</item>
+    </style>
+
+    <style name="order_detail_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/default_padding</item>
+        <item name="android:paddingRight">@dimen/default_padding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="order_detail_group_tv_tip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="order_detail_group_tv_content">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="order_detail_line_status">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#939390</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="evaluate_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@color/fg_spec_child</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@drawable/checked_evaluate_button</item>
+    </style>
+
+    <style name="CustomSeekbarStyle" >
+        <item name="android:maxHeight">3dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@color/colorAccent</item>
+        <item name="android:progressDrawable">@drawable/bg_seek_bar</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:thumb">@drawable/point</item>
+    </style>
+
+
+    <declare-styleable name="AutoLineFeedLinearLayout">
+        <!--每一行显示多少个-->
+        <attr name="auto_line_num" format="integer"/>
+        <!--行与行之间的间距-->
+        <attr name="auto_line_top" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

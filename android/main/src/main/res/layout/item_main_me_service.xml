@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wanyue.common.custom.ShadowContainer
+        android:id="@+id/vp_service_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:containerCornerRadius="5dp"
+        app:containerDeltaLength="5dp"
+        app:containerShadowColor="#10000000"
+        app:containerShadowRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_color_white_radius_5"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+            <TextView
+                android:id="@+id/tv_service_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_service"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.wanyue.shop.view.widet.linear.ListFlexboxLayout
+                android:id="@+id/serviceListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.wanyue.common.custom.ShadowContainer>
+
+
+</FrameLayout>

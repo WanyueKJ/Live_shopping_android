@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:src="@mipmap/icon_call_refuse"
+        android:id="@+id/img_icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="拒绝"
+        android:textColor="@color/gray1"
+        android:textSize="13sp"
+        android:id="@+id/tv_text"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

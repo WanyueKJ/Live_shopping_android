@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:id="@+id/vip"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@id/name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/name"
+        android:src="@mipmap/o_vip_icon"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/gray3"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/gray3"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/red_point"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_red_point"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="14dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/btn_pri_chat"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_btn_pri_chat"
+        android:gravity="center"
+        android:text="@string/im_pri_chat"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        />
+
+    <View
+        style="@style/line2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+</RelativeLayout>

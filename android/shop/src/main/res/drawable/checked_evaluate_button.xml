@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/bg_color_global_radiu_2"
+        android:state_checked="true">
+    </item>
+    <item
+        android:drawable="@drawable/bg_color_grayf5_radius_2"
+        android:state_checked="false">
+    </item>
+</selector>

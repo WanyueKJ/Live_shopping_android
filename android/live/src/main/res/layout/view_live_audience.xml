@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:id="@+id/btn_light"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_heart_light"
+            />
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_light"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_share"
+            />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_share"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_func_0"
+            />
+        <ImageView
+            android:id="@+id/btn_gift"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_more"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_gift"
+            />
+        <FrameLayout
+            android:id="@+id/btn_goods"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_gift"
+            android:padding="5dp"
+            android:visibility="invisible"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_live_goods_1"
+                />
+            <ImageView
+                android:id="@+id/goods_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_live_goods"
+                />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/btn_red_pack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_goods"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_red_pack"
+            android:visibility="gone"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/btn_chat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_chat"
+            />
+
+        <TextView
+            android:id="@+id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignRight="@id/btn_light"
+            android:layout_alignTop="@id/btn_light"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_red_point"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="14dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:translationY="-4dp"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

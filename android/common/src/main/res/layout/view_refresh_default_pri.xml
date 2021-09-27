@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.wanyue.common.custom.refresh.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        app:mhShowBezierWave="false"
+        app:mhPrimaryColor="@color/transparent"
+        app:mhScrollableWhenRefreshing="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+
+            />
+
+        <FrameLayout
+            android:id="@+id/no_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            >
+            <ImageView
+                android:layout_marginBottom="56dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:src="@mipmap/icon_no_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="@string/no_data"
+                android:textColor="#D7E6F8"
+                android:textSize="14sp"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/load_failure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:translationY="-60dp"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="74dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg_load_failure"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/load_failure"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_failure_2"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_reload"
+                android:layout_width="60dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_reload"
+                android:gravity="center"
+                android:text="@string/reload"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlTextFailed="@string/refresh_footer_failed"
+        app:srlTextFinish="@string/refresh_footer_finish"
+        app:srlTextLoading="@string/refresh_footer_loading"
+        app:srlTextNothing="@string/refresh_footer_nothing"
+        app:srlTextPulling="@string/refresh_footer_pulling"
+        app:srlTextRefreshing="@string/refresh_footer_refreshing"
+        app:srlTextRelease="@string/refresh_footer_release"
+        />
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

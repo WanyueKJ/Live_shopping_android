@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingLeft="@dimen/default_padding"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical">
+    <com.wanyue.common.custom.CheckImageView
+        app:deault_image="@drawable/icon_check_shop_cart_default"
+        app:select_image="@drawable/icon_check_shop_cart_select"
+        android:id="@+id/check_image"
+        style="@style/shop_cart_check"
+        app:enable_click="false"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_store"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李二狗的小店"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_name"
+         />
+
+</LinearLayout>

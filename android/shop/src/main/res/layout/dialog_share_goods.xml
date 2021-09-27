@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_color_white_radius_5"
+    android:layout_gravity="bottom"
+   >
+
+    <com.wanyue.common.custom.DrawableTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送给朋友"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/btn_share_wechat"
+        app:dt_top_drawable="@mipmap/icon_share_wchat"
+        app:dt_top_width="40dp"
+        app:dt_top_height="40dp"
+        android:drawablePadding="5dp"
+        app:layout_constraintRight_toLeftOf="@+id/btn_pill"
+        />
+
+    <com.wanyue.common.custom.DrawableTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二维码海报"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn_share_wechat"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/btn_pill"
+        app:dt_top_drawable="@drawable/icon_goods_pill"
+        app:dt_top_width="40dp"
+        app:dt_top_height="40dp"
+        android:drawablePadding="5dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

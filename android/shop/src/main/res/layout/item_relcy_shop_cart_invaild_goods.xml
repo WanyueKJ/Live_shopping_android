@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingLeft="@dimen/default_padding"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/line_color"
+        />
+    <TextView
+        android:id="@+id/check_image"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="失效"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:background="@drawable/bg_color_gray1_radius_2"
+        android:textSize="@dimen/text_size_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        app:riv_corner_radius="5dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/img_thumb"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        tools:src="@drawable/bg_btn_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/check_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_thumb"
+        android:textColor="@color/gray3"
+        android:layout_marginLeft="10dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/tv_title"
+        tools:text="女神碎花连衣裙 韩版大牌尾货
+夏日出街必备 今日特价福利女神碎花连衣裙 韩版大牌尾货
+夏日出街必备 今日特价福利女神碎花连衣裙 韩版大牌尾货
+夏日出街必备 今日特价福利"
+        android:layout_alignTop="@+id/img_thumb"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintLeft_toRightOf="@+id/img_thumb"
+        app:layout_constraintTop_toTopOf="@id/img_thumb"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goods_is_invaild"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/gray3"
+        android:id="@+id/tv_tip"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@id/img_thumb"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

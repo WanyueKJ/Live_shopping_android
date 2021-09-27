@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/view_title"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_address_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:text="@string/address_user"
+                style="@style/address_tint_text" />
+
+            <EditText
+                tools:text="李二狗"
+                android:id="@+id/tv_name"
+                android:layout_weight="1"
+                android:hint="@string/please_inpu_address_user_name"
+                style="@style/address_input_content" />
+        </LinearLayout>
+        <View style="@style/line2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_address_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:text="@string/phone_num"
+                style="@style/address_tint_text" />
+
+            <EditText
+                tools:text="18700000000"
+                android:id="@+id/tv_phone"
+                android:inputType="number"
+                android:hint="@string/please_input_address_phone_num"
+                android:layout_weight="1"
+                style="@style/address_input_content" />
+        </LinearLayout>
+
+        <View style="@style/line2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_address_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/btn_select_area"
+            >
+            <TextView
+                android:text="@string/in_area"
+                style="@style/address_tint_text" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:text="省 ,\t\t市 ,\t\t区"
+                android:layout_weight="1"
+                style="@style/address_input_content" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_sel_addr"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <View style="@style/line2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="70dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:text="@string/detail_address"
+                style="@style/address_tint_text" />
+
+            <EditText
+                tools:text="哈哈哈"
+                android:id="@+id/tv_detail_address"
+                android:hint="@string/please_input_detail_address"
+                android:layout_weight="1"
+                style="@style/address_input_content" />
+        </LinearLayout>
+        <View style="@style/line2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_address_height"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <com.wanyue.common.custom.CheckImageView
+            app:deault_image="@drawable/icon_check_shop_cart_default"
+            app:select_image="@drawable/icon_check_shop_cart_select"
+            android:id="@+id/btn_set_default"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            app:enable_click="true"
+            />
+        <TextView
+            android:text="@string/set_detail_address"
+            android:layout_marginLeft="20dp"
+            style="@style/address_tint_text" />
+    </LinearLayout>
+
+
+    <TextView
+        android:text="@string/save2"
+        style="@style/default_bottom_button"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_commit"
+        android:alpha="0.5"
+        android:enabled="false"
+        />
+
+</LinearLayout>

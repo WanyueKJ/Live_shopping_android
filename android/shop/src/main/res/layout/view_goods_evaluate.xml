@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/btn_evaluate"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/evaluate_tip"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/tv_evaluate_num"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="98%"
+            android:textColor="@color/global"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/tv_feedback_rate"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high_praise_rate"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_evaluate_changce"
+            />
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/icon_arrow_right"
+            android:tint="@color/gray1"
+            />
+    </LinearLayout>
+
+<com.wanyue.shop.view.widet.LinearLayoutForListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listView"
+    android:orientation="vertical"
+    />
+
+</LinearLayout>

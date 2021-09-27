@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    >
+    <include layout="@layout/view_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="@string/select_report_reson"
+        android:textColor="@color/gray1"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reclyView"
+        android:layout_marginBottom="10dp"
+        android:minHeight="100dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_dynamic_tip"
+        android:textColor="@color/gray1"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_color_white_radius_10"
+        android:layout_margin="10dp"
+        android:id="@+id/tv_des"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:gravity="left"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_btn_primary"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>

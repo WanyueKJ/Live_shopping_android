@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/view_title"
+            android:id="@+id/top"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:id="@+id/no_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cash_account_empty"
+                android:textColor="@color/textColor2"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="invisible"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/top"
+                android:layout_marginTop="1dp"
+                android:overScrollMode="never"
+                />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/btn_add"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:text="添加提现账户"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/global"
+                android:background="@drawable/bound_color_global_radius_15"
+                android:textSize="@dimen/text_size_13"
+                android:textStyle="bold"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

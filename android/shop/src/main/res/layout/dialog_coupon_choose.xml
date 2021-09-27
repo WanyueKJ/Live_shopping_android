@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_coupon_window"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@mipmap/icon_live_close_2"
+            android:padding="13dp"
+            android:layout_gravity="center_vertical|right"
+            android:id="@+id/btn_close"
+            />
+    </FrameLayout>
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/refreshView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <Button  style="@style/default_bottom_button"
+             android:layout_marginBottom="10dp"
+             android:text="@string/no_user_copon"
+             android:id="@+id/btn_no_use"
+        />
+
+
+</LinearLayout>

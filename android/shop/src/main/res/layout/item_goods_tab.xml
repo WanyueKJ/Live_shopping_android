@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/v_tab"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:alpha="0"
+    >
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="backClick"
+        android:padding="11dp"
+        android:src="@mipmap/icon_back_left2"
+        android:tint="@color/textColor"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:orientation="horizontal"
+        android:id="@+id/radio_tab_group"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:text="商品"
+            android:button="@null"
+            android:id="@+id/btn_0"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:text="评价"
+            android:button="@null"
+            android:id="@+id/btn_1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:text="推荐"
+            android:button="@null"
+            android:id="@+id/btn_2"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:text="详情"
+            android:button="@null"
+            android:id="@+id/btn_3"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        >
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tab_0"
+            >
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@color/global"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tab_1"
+            >
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@color/global"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tab_2"
+            >
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@color/global"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tab_3"
+            >
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@color/global"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+

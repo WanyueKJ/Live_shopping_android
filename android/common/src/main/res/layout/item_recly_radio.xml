@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textColor="@color/textColor">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        tools:text="@string/order_des"
+        android:id="@+id/tv_content"
+        />
+
+    <com.wanyue.common.custom.CheckImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="3dp"
+        app:select_image="@mipmap/icon_cancle_oder_sel"
+        android:id="@+id/check_image"
+        app:enable_click="false"
+        />
+
+</LinearLayout>
+

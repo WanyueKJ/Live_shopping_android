@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/gray3"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        tools:text="品类"
+        />
+
+    <EditText
+        android:id="@+id/tv_select_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        android:gravity="right"
+        android:background="@null"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+
+    <ImageView android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:id="@+id/img_content"
+               android:visibility="gone"
+               android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/img_arrow"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SpreadCensusActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="178dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_spread_normal"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_bg"
+        />
+    <include  layout="@layout/view_title_transport"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spread_tip3"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp_tab"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:id="@+id/tv_head_title"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/tv_num_tip"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="3"
+        android:textSize="@dimen/text_size_25"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/tv_head_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_head_title"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg"
+        android:id="@+id/tv_num_tip"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_spread_brokerage"
+        app:layout_constraintTop_toBottomOf="@+id/vp_tab"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/default_margin"
+        />
+
+    <com.wanyue.common.custom.refresh.RxRefreshView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/refreshView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

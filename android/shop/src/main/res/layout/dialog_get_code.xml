@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color_white_radius_5">
+ <com.makeramen.roundedimageview.RoundedImageView
+     android:layout_width="match_parent"
+     android:layout_height="140dp"
+     android:scaleType="centerCrop"
+     android:src="@drawable/promoter"
+     />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_13"
+        android:textStyle="bold"
+        android:text="赠送积分"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding"
+        android:layout_marginRight="@dimen/default_padding"
+        android:textColor="@color/textColor2"
+        android:textSize="@dimen/text_size_11"
+        android:gravity="center_horizontal"
+        tools:text="@string/get_code_tip"
+        android:id="@+id/tv_code_tip"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_btn_primary_2"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/white"
+        android:text="@string/i_know"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_compeleted"
+        />
+
+</LinearLayout>

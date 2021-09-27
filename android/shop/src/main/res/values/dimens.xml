@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sort_container_height">40dp</dimen>
+    <dimen name="shop_cart_bottom_height">50dp</dimen>
+    <dimen name="shop_default_right_button_width">137dp</dimen>
+    <dimen name="num_view_width">120dp</dimen>
+    <dimen name="num_view_height">30dp</dimen>
+    <dimen name="item_address_height">50dp</dimen>
+
+</resources>

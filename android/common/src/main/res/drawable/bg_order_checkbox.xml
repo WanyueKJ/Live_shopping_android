@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_f5_3radius" android:state_checked="false"/>
+    <item android:drawable="@drawable/bg_main_3radius" android:state_checked="true"/>
+</selector>

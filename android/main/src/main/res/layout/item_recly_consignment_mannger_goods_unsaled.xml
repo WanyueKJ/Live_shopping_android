@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    >
+    <include layout="@layout/item_recly_consignment_mannger_goods"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="删除"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:background="@drawable/bound_color_gray1_radius_2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/btn_delete"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="上架"
+            android:gravity="center"
+            android:textColor="@color/global"
+            android:background="@drawable/bound_color_gray1_radius_2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/btn_up"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+
+</LinearLayout>

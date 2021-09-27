@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.wanyue.common.custom.MyViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewPager"
+    android:layout_marginBottom="@dimen/main_bottom_height"
+    app:canScroll="false"
+    />
+
+
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/main_bottom_height"
+       android:id="@+id/navigation"
+       app:itemTextColor="@color/fg_main_bottom"
+       app:itemIconTint="@color/fg_main_bottom"
+       app:menu="@menu/navigation"
+       android:background="@color/white"
+       android:layout_gravity="bottom"
+       app:itemIconSize="21dp"
+       app:labelVisibilityMode="labeled"
+       />
+
+
+
+</FrameLayout>

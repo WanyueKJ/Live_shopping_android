@@ -1,0 +1,124 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["appcompat-v7"]
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api rootProject.ext.dependencies["cardview-v7"]
+    api rootProject.ext.dependencies["design"]
+    api rootProject.ext.dependencies["multidex"]
+    api files('libs/commons-io-1.4.jar')
+    //okHttp网络请求
+    api rootProject.ext.dependencies["okhttp"]
+    //OkGo 是对okHttp的封装
+    api rootProject.ext.dependencies["okgo"]
+    //OkGo上传下载扩展库
+    api rootProject.ext.dependencies["okserver"]
+    //fastJson解析json
+    api rootProject.ext.dependencies["fastjson"]
+    //eventbus事件总线
+    api rootProject.ext.dependencies["eventbus"]
+    //使用Glide加载图片
+    api rootProject.ext.dependencies["glide"]
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    api rootProject.ext.dependencies["glide-transformations"]
+    //带圆角，边框的的ImageView
+    api rootProject.ext.dependencies["roundedimageview"]
+    //gif库，播放礼物gif用
+    api rootProject.ext.dependencies["gif-drawable"]
+    //svga播放器
+    api rootProject.ext.dependencies["SVGAPlayer"]
+    //七牛云存储
+    api rootProject.ext.dependencies["qiniu-sdk"]
+    //腾讯云存储
+    api rootProject.ext.dependencies["tencent-cosxml"]
+    //微信sdk,支付登录分享
+    api rootProject.ext.dependencies["tencent-wechat-sdk"]
+    //腾讯bugly
+    api rootProject.ext.dependencies["tencent-bugly"]
+    //友盟统计
+    api rootProject.ext.dependencies["umeng-common"]
+    //友盟统计
+    api rootProject.ext.dependencies["umeng-analytics"]
+    //图片裁剪
+    api rootProject.ext.dependencies["ucrop"]
+    //轮播图
+    api rootProject.ext.dependencies["banner"]
+    //鲁班
+    api rootProject.ext.dependencies["Luban"]
+    //支付宝sdk
+    api files('libs/alipaySdk-20180601.jar')
+    //腾讯定位，地图sdk
+    api files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    api files('libs/TencentMapSDK_1.2.8.1.jar')
+    //下拉刷新上拉加载
+    api rootProject.ext.dependencies["smartRefreshLayout"]
+    //ViewPager指示器
+    api rootProject.ext.dependencies["magicIndicator"]
+    //shareSDK
+    api project(':mob')
+
+    //一个Picker控件，选择日期，城市用
+    api files('libs/AndroidPicker-1.5.6.jar')
+    //阿里 ARouter
+    api rootProject.ext.dependencies["arouter"]
+    //流式布局 flowlayout
+    api rootProject.ext.dependencies["flowlayout"]
+    //api 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    //谷歌支付
+    //api 'com.google.firebase:firebase-messaging:18.0.0'
+    api 'com.android.billingclient:billing:1.1'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'io.reactivex.rxjava2:rxjava:2.1.7'
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    api 'com.readystatesoftware.chuck:library:1.0.4'
+    api 'com.lzy.net:okrx2:2.0.2'
+    api rootProject.ext.dependencies["RecyclerViewAdapterHelper"]
+    api rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    debugApi 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseApi 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    api 'com.jeremyliao:live-event-bus:1.5.7'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    compile 'com.github.fxc0719:RoundCornerLayout:1.0.2'
+    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    api 'androidx.navigation:navigation-ui:2.2.2'
+    api 'com.google.android:flexbox:1.1.0'
+    api 'com.lxj:xpopup:2.0.6'
+}

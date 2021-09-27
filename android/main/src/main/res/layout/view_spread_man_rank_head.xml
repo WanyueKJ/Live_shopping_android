@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/vp_rank_2"
+        android:visibility="invisible"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_avatar_2"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="@id/img_wrap_2"
+            app:layout_constraintRight_toRightOf="@id/img_wrap_2"
+            app:layout_constraintBottom_toBottomOf="@id/img_wrap_2"
+            android:layout_marginBottom="3dp"
+            app:riv_oval="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_wrap_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_spread_rank_2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哇卡哇卡..."
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@id/img_wrap_2"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_name_2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88人"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_2"
+            android:layout_marginTop="9dp"
+            android:id="@+id/tv_user_num_2"
+             />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_rank_1"
+        android:visibility="invisible"
+        >
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_avatar_1"
+            android:layout_width="66.5dp"
+            android:layout_height="66.5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="@id/img_wrap_1"
+            app:layout_constraintRight_toRightOf="@id/img_wrap_1"
+            app:layout_constraintBottom_toBottomOf="@id/img_wrap_1"
+            android:layout_marginBottom="3dp"
+            app:riv_oval="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_wrap_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_spread_rank_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哇卡哇卡..."
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@id/img_wrap_1"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_name_1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88人"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_1"
+            android:layout_marginTop="9dp"
+            android:id="@+id/tv_user_num_1"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:id="@+id/vp_rank_3"
+        android:visibility="invisible"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_avatar_3"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="@id/img_wrap_3"
+            app:layout_constraintRight_toRightOf="@id/img_wrap_3"
+            app:layout_constraintBottom_toBottomOf="@id/img_wrap_3"
+            android:layout_marginBottom="3dp"
+            app:riv_oval="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_wrap_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_spread_rank_3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="哇卡哇卡..."
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@id/img_wrap_3"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_name_3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88人"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_3"
+            android:layout_marginTop="9dp"
+            android:id="@+id/tv_user_num_3"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</LinearLayout>

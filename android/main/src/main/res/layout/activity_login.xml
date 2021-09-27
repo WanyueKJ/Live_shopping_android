@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login_back"
+        />
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/login_immediately_register"
+        android:textColor="@color/textColor2"
+        android:textSize="@dimen/text_size_13"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/default_padding"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        tools:context=".view.activity.LoginActivity">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginTop="100dp"
+            android:id="@+id/img_launcher"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/well_come_to_live_app"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="@string/login_input_phone"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/gray3"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:layout_marginTop="40dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray6"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/tv_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:hint="@string/login_input_code"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@null"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <TextView
+                android:id="@+id/btn_get_code"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login_get_code"
+                android:enabled="false"
+                android:textColor="@color/fg_btn_login_code"
+                android:textSize="@dimen/text_size_14"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray6"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_item_height"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/bg_btn_primary"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/login_immediately_login"
+            android:textColor="@color/white"
+            android:elevation="1dp"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
+            android:overScrollMode="never"
+            />
+
+        <LinearLayout
+            android:id="@+id/tip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/login_tip_1"
+                android:textColor="@color/textColor2"
+                android:textSize="@dimen/text_size_11"
+                />
+
+            <TextView
+                android:id="@+id/btn_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:text="@string/login_tip_2"
+                android:textColor="@color/global"
+                android:textSize="@dimen/text_size_11"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

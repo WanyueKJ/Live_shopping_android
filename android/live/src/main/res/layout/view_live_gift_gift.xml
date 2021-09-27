@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.wanyue.live.custom.GiftPageViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/bg_gift_list"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@id/radio_group"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/btn_send_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/btn_send"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_live_gift_send_2"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/live_gift_send"
+                    android:textColor="@color/fg_btn_gift_send"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_choose"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/btn_send"
+                    android:background="@drawable/bg_live_gift_choose"
+                    android:gravity="center"
+                    android:paddingRight="13dp"
+                    android:text="1"
+                    android:textColor="@color/global"
+                    android:textSize="14sp"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="13dp"
+                    android:layout_height="7dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/btn_send"
+                    android:rotation="180"
+                    android:src="@mipmap/icon_live_gift_2"
+                    android:tint="@color/global"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <com.wanyue.common.custom.DrawableTextView
+                android:id="@+id/coin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:dt_left_drawable="@mipmap/icon_live_gift_zs"
+                app:dt_left_height="20dp"
+                app:dt_left_width="20dp"
+                app:dt_right_drawable="@mipmap/icon_arrow_right_3"
+                app:dt_right_height="14dp"
+                app:dt_right_width="14dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="14dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/anim_loading"
+        android:indeterminateOnly="true"
+        />
+</FrameLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.wanyue.common.custom.ShadowContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:containerCornerRadius="5dp"
+    app:containerDeltaLength="5dp"
+    app:containerShadowColor="#10000000"
+    app:containerShadowRadius="5dp"
+    android:id="@+id/vp_order_container"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color_white_radius_5"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="0dp"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bg_user_follow_1"
+            app:riv_corner_radius_top_right="5dp"
+            app:riv_corner_radius_top_left="5dp"
+            android:id="@+id/img_conver"
+            />
+        <com.fxc.roundcornerlayout.RoundCornerLinearLayout
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_conver"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:roundedCornerRadius="10dp"
+            app:roundTopRight="true"
+            app:roundTopLeft="true"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            android:background="@color/alpha_black_3f"
+            >
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                >
+                <com.wanyue.common.custom.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIVE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10"
+                    android:textStyle="bold"
+                    app:dt_left_height="10dp"
+                    app:dt_left_width="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    app:dt_left_drawable="@drawable/icon_yelllow_cart"
+                    />
+
+
+
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:background="@color/alpha_white_2f"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_9"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="123"
+                android:id="@+id/tv_watch_count"
+                android:layout_marginRight="7dp"
+                />
+
+        </com.fxc.roundcornerlayout.RoundCornerLinearLayout>
+        
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="直播标题在这里显示，哈哈..."
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_11"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            app:layout_constraintTop_toBottomOf="@id/img_conver"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/tv_title"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/icon_main_message"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            android:id="@+id/img_user_avatar"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="乔知画小姐姐"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_10"
+            android:id="@+id/tv_user_name"
+            app:layout_constraintTop_toTopOf="@id/img_user_avatar"
+            app:layout_constraintBottom_toBottomOf="@id/img_user_avatar"
+            app:layout_constraintLeft_toRightOf="@id/img_user_avatar"
+            android:layout_marginLeft="10dp"
+            />
+        <com.wanyue.common.custom.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1.8w"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            app:layout_constraintBottom_toBottomOf="@id/img_conver"
+            app:layout_constraintRight_toRightOf="@id/img_conver"
+            android:layout_marginRight="10.5dp"
+            app:dt_left_drawable="@drawable/icon_main_zan"
+            app:dt_left_height="10dp"
+            app:dt_left_width="10dp"
+            android:id="@+id/tv_zan"
+            android:drawablePadding="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <com.fxc.roundcornerlayout.RoundCornerFrameLayout
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            app:roundedCornerRadius="2.5dp"
+            app:roundTopRight="true"
+            app:roundTopLeft="true"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            app:layout_constraintTop_toTopOf="@id/img_user_avatar"
+            app:layout_constraintBottom_toBottomOf="@id/img_user_avatar"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="7.5dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_good_cover"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="3\n宝贝"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10"
+                android:background="#99000000"
+                android:textStyle="bold"
+                android:id="@+id/tv_goods_num"
+                />
+        </com.fxc.roundcornerlayout.RoundCornerFrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.wanyue.common.custom.ShadowContainer>

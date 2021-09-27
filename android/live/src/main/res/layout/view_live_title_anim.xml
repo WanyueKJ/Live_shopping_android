@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wanyue.common.custom.MyLinearLayout5
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp"
+    android:layout_below="@id/btn_goods"
+    android:background="@drawable/bg_live_gift_tip"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:translationX="500dp"
+    >
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/icon_live_title_laba"
+        />
+
+    <com.wanyue.live.custom.MyTextView2
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+</com.wanyue.common.custom.MyLinearLayout5>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/alpha_black_3f"
+
+    >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding"
+        android:background="@drawable/bg_dialog_white"
+        android:layout_gravity="bottom"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="7dp"
+                android:src="@mipmap/icon_close_x"
+                android:id="@+id/btn_close"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_title"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/textColor"
+                />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:riv_corner_radius="5dp"
+                tools:src="@drawable/bg_empty_good_list"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_title"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/img_avator"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋耐克鞋"
+                android:id="@+id/tv_title"
+                android:textSize="@dimen/text_size_14"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/textColor"
+                app:layout_constraintLeft_toRightOf="@id/img_avator"
+                app:layout_constraintRight_toLeftOf="@id/btn_close"
+                app:layout_constraintTop_toTopOf="@id/img_avator"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="$123"
+                android:maxLines="1"
+                android:id="@+id/tv_price"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/global"
+                android:ellipsize="end"
+                app:layout_constraintLeft_toRightOf="@id/img_avator"
+                app:layout_constraintBottom_toBottomOf="@id/img_avator"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="库存:5"
+                android:maxLines="1"
+                android:id="@+id/tv_stock"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/gray1"
+                android:ellipsize="end"
+                app:layout_constraintLeft_toRightOf="@id/tv_price"
+                app:layout_constraintBottom_toBottomOf="@id/img_avator"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.wanyue.shop.view.widet.LinearLayoutForListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="10dp"
+            android:id="@+id/reclyView"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_14"
+            android:text="@string/count"
+            app:layout_constraintTop_toBottomOf="@+id/reclyView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_num_tip"
+            />
+        <FrameLayout
+            android:layout_width="@dimen/num_view_width"
+            android:layout_height="@dimen/num_view_height"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_num_tip"
+            android:layout_marginTop="10dp"
+            android:id="@+id/vp_number_container"
+            >
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+
+

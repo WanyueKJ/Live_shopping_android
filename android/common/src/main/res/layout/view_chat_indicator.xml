@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="6dp"
+    android:layout_height="6dp"
+    android:button="@null"
+    android:background="@drawable/bg_live_chat_indicator"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:clickable="false"
+    />

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/bg_live_chat_item"
+    android:gravity="center_vertical"
+    android:minHeight="25dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="6dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="6dp">
+    
+    <ImageView
+        android:visibility="gone"
+        android:src="@color/global"
+        android:layout_marginRight="4dp"
+        android:id="@+id/iv_identity"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingRight="8dp"
+        android:textColor="@color/yellow_7a"
+        android:textSize="@dimen/text_size_13"
+        tools:text="神龙在天：" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_13"
+        tools:text="挺好看的呀" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="83dp"
+xmlns:tools="http://schemas.android.com/tools"
+android:paddingRight="@dimen/default_padding"
+android:paddingLeft="@dimen/default_padding"
+android:background="@color/white"
+android:id="@+id/container"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<View
+    android:layout_width="0dp"
+    android:layout_height="1px"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/line_color"
+    />
+
+<com.makeramen.roundedimageview.RoundedImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    app:riv_corner_radius="5dp"
+    android:scaleType="centerCrop"
+    android:layout_centerVertical="true"
+    android:id="@+id/img_thumb"
+    android:layout_marginTop="@dimen/default_margin"
+    android:layout_marginBottom="@dimen/default_margin"
+    tools:src="@drawable/bg_btn_primary"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    />
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/textColor"
+    android:layout_marginLeft="10dp"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:id="@+id/tv_title"
+    android:padding="1dp"
+    tools:text="女神碎花连衣裙 韩版大牌尾货
+夏日出街必备 今日特价福利女神碎花连衣裙 韩版大牌尾货
+夏日出街必备 今日特价福利女神碎花连衣裙 韩版大牌尾货
+夏日出街必备 今日特价福利"
+    android:layout_alignTop="@+id/img_thumb"
+    android:textSize="@dimen/text_size_14"
+    app:layout_constraintLeft_toRightOf="@+id/img_thumb"
+    app:layout_constraintRight_toLeftOf="@id/tv_price"
+    app:layout_constraintTop_toTopOf="@id/img_thumb"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:text="x1"
+    android:textSize="@dimen/text_size_13"
+    android:textColor="@color/gray1"
+    android:id="@+id/tv_goods_num"
+    app:layout_constraintRight_toRightOf="@id/tv_price"
+    app:layout_constraintTop_toBottomOf="@id/tv_price"
+    android:layout_marginTop="3dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="¥ 880.00"
+    android:textSize="@dimen/text_size_13"
+    android:textColor="@color/gray1"
+    android:id="@+id/tv_price"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/tv_title"
+    app:layout_constraintTop_toTopOf="@id/tv_title"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
