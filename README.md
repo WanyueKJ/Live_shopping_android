@@ -27,12 +27,10 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/182630_1b66eb38_8162876.png "组 2.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/182655_53f9d251_8162876.gif "直播_batch.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183135_878d6e3a_8162876.png "组 3.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183220_41972007_8162876.gif "直播2_batch.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183146_74eab05f_8162876.png "组 4.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183155_741a70bd_8162876.png "组 5.png")
-
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183220_41972007_8162876.gif "直播2_batch.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183206_39216a74_8162876.png "组 6.png")
-
 
  ### 开源版使用须知
     
