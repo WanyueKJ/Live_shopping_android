@@ -12,7 +12,7 @@
 
 ### ios版地址
  - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">点击此处</a>
-  ![输入图片说明](https://images.gitee.com/uploads/images/2021/0923/180258_5529020c_8162876.png "android.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/201432_b98e1d63_8162876.png "155114_9bce1969_8162876.png")
    
 ### 项目介绍
 万岳科技可为商家快速搭建起一套属于自己的直播商城系统，有效避开商城直播过程中的痛点难点，加入自身创意的同时，汲取各家平台的特色功能和体验，并且可根据用户的运营需求对系统做定制开发。
@@ -27,10 +27,11 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/120111_acd0b536_8162876.gif "MAIN (4k)_12.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142722_b321363f_8162876.png "组 3.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142737_a290425c_8162876.png "组 4.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/135946_70db5777_8162876.gif "MAIN (4k)_17.gif")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/201546_a6910445_8162876.png "组 7.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142747_fa3e3a8c_8162876.png "组 5.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183206_39216a74_8162876.png "组 6.png")
-
+ ### 功能对比
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/203214_b81dfd4e_8162876.png "直播商城系统功能表安卓版.png")
  ### 开源版使用须知
     
    - 允许用于个人学习、教学案例
