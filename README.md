@@ -7,8 +7,8 @@
 ---
 
 ### 系统演示
-- 总后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/admin/login/index">https://malldemo.sdwanyue.com/admin/login/index</a> 
-- 商户后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> 
+- 总后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/admin/login/index">https://malldemo.sdwanyue.com/admin/login/index</a> 账号：visitor     密码：visitor
+- 商户后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> 账号：15711449029 验证码：123456（点击获取验证码后，输入该验证码即可）
 
 ### Android版地址
    - 接口框架地址: 本项目根目录下phalapi目录
