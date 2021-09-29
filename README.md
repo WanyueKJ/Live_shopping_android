@@ -30,8 +30,8 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/201546_a6910445_8162876.png "组 7.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142747_fa3e3a8c_8162876.png "组 5.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183206_39216a74_8162876.png "组 6.png")
- ### 功能对比
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/203214_b81dfd4e_8162876.png "直播商城系统功能表安卓版.png")
+ ### 功能介绍表
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/205753_7f468528_8162876.png "未标题-1.png")
  ### 开源版使用须知
     
    - 允许用于个人学习、教学案例
