@@ -10,9 +10,8 @@
 - 总后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/admin/login/index">https://malldemo.sdwanyue.com/admin/login/index</a> 账号：visitor     密码：visitor
 - 商户后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> 账号：15711449029 验证码：123456（点击获取验证码后，输入该验证码即可）
 
-### Android版地址
-   - 接口框架地址: 本项目根目录下phalapi目录
-   - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_android">点击此处</a>
+### ios版地址
+ - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">点击此处</a>
   ![输入图片说明](https://images.gitee.com/uploads/images/2021/0923/180258_5529020c_8162876.png "android.png")
    
 ### 项目介绍
@@ -20,7 +19,7 @@
 * 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
 * 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的直播商城系统。
 
-基于ThinkPhp6.0+Vue 开发的一套万岳直播商城系统，系统功能介绍[查看]()，专业售后技术团队，让您二开无忧。
+基于ThinkPhp6.0+ android开发的一套万岳直播商城系统，系统功能介绍[查看]()，专业售后技术团队，让您二开无忧。
 
 ### 功能简介
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/182559_ae3e687c_8162876.png "组 1.png")
