@@ -53,7 +53,7 @@ import butterknife.OnTextChanged;
 
 @Route(path = RouteUtil.PATH_LOGIN)
 public class LoginActivity extends BaseActivity implements TimeModel.TimeListner, OnItemClickListener<MobBean> {
-
+    //登录
     @BindView(R2.id.tv_phone)
     EditText mTvPhone;
     @BindView(R2.id.tv_code)
