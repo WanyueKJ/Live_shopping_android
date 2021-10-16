@@ -3,7 +3,6 @@
 
 ### 项目说明（如果对你有用，请给个star！）
 ##### <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479716">项目文档</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479717">部署文档</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479722">常见问题</a> 
-
 ---
 
 ### 系统演示
@@ -35,9 +34,7 @@
  ### 开源版使用须知
     
    - 允许用于个人学习、教学案例
-    
    - 开源版不适合商用，商用请购买商业版
-    
    - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
 
 ### 商业合作

@@ -50,9 +50,9 @@ public class LaunchActivity extends AbsActivity {
                 startLauncher();
             }
         })  ;
-
     }
 
+    //开启启动动画
 
     private void startLauncherAnim() {
         mViewAnimator=ViewAnimator.animate(mImgCover).alpha(0,1).duration(500).start();
