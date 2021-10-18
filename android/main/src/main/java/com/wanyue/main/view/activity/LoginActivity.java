@@ -75,6 +75,8 @@ public class LoginActivity extends BaseActivity implements TimeModel.TimeListner
     private LoginCommitBean mLoginCommitBean;
     private MobLoginUtil mLoginUtil;
 
+    //登录改动
+
 
     @Override
     public void init() {

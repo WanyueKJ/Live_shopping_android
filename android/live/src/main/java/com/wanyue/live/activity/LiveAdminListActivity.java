@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
 import android.view.ViewGroup;
-
 import com.wanyue.common.Constants;
 import com.wanyue.common.activity.AbsActivity;
 import com.wanyue.live.R;
@@ -15,7 +14,7 @@ import com.wanyue.live.views.LiveAdminListViewHolder;
  */
 
 public class LiveAdminListActivity extends AbsActivity {
-
+        //注释
     public static void forward(Context context, String liveUid) {
         Intent intent = new Intent(context, LiveAdminListActivity.class);
         intent.putExtra(Constants.LIVE_UID, liveUid);
