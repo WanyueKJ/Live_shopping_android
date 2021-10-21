@@ -77,7 +77,6 @@ public class LoginActivity extends BaseActivity implements TimeModel.TimeListner
 
     //登录改动
 
-
     @Override
     public void init() {
         mBtnTip.setText(getString(R.string.login_tip_2));
@@ -86,6 +85,7 @@ public class LoginActivity extends BaseActivity implements TimeModel.TimeListner
         mImgLauncher.setImageResource(CommonAppConfig.getAppIconRes());
     }
 
+    //测试
     private void initCommitData() {
         mLoginCommitBean=new LoginCommitBean();
         mLoginCommitBean.setDataListner(new DataListner() {
