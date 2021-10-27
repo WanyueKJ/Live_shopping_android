@@ -85,7 +85,7 @@ public class LoginActivity extends BaseActivity implements TimeModel.TimeListner
         mImgLauncher.setImageResource(CommonAppConfig.getAppIconRes());
     }
 
-//
+//登陆
     private void initCommitData() {
         mLoginCommitBean=new LoginCommitBean();
         mLoginCommitBean.setDataListner(new DataListner() {
