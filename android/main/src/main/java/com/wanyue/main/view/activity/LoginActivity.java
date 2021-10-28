@@ -83,6 +83,10 @@ public class LoginActivity extends BaseActivity implements TimeModel.TimeListner
         initCommitData();
         initThirdData();
         mImgLauncher.setImageResource(CommonAppConfig.getAppIconRes());
+
+
+
+
     }
 
 //登陆
