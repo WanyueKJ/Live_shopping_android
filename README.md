@@ -21,14 +21,9 @@
 基于ThinkPhp6.0+ android开发的一套万岳直播商城系统，系统功能介绍[查看]()，专业售后技术团队，让您二开无忧。
 
 ### 功能简介
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/182559_ae3e687c_8162876.png "组 1.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/182630_1b66eb38_8162876.png "组 2.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/120111_acd0b536_8162876.gif "MAIN (4k)_12.gif")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142722_b321363f_8162876.png "组 3.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142737_a290425c_8162876.png "组 4.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/201546_a6910445_8162876.png "组 7.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/142747_fa3e3a8c_8162876.png "组 5.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0928/183206_39216a74_8162876.png "组 6.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173747_cb4407f6_8162876.png "直播电商开源版1.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173756_920ff851_8162876.png "直播电商开源版2.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173804_ab8632cd_8162876.png "直播电商开源版3.png")
 ### 功能介绍表
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/210122_47ed5487_8162876.png "未标题-1.png")
 ### 开源版使用须知
