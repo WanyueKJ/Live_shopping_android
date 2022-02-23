@@ -1,56 +1,56 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0929/142554_97c034b0_8162876.png" width="590" height="212"/></div>
 
 
-### 项目说明（如果对你有用，请给个star！）
-##### <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479716">项目文档</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479717">部署文档</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479722">常见问题</a>
+### Project description (if useful to you, please give a star!)
+##### <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479716">Project documentation</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479717">Deployment document</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479722">Q&A</a>
 ---
 
-### 系统演示
-- 总后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/admin/login/index">https://malldemo.sdwanyue.com/admin/login/index</a> 账号：visitor     密码：visitor
-- 商户后台地址: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> 账号：15711449029 验证码：123456（点击获取验证码后，输入该验证码即可）
+### Demo
+- Front Desk Address: <a target="_blank" href="https://malldemo.sdwanyue.com/admin/login/index">https://malldemo.sdwanyue.com/admin/login/index</a> Account：visitor     Password：visitor
+- Merchant background Address: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> Account：15711449029 Password：123456(Click to obtain the verification code and enter the verification code)
 
-### ios版地址（可直接跳转查看）
-- 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">点击此处</a>
+### Ios version address (can be directly jumped to view)
+- Warehouse Address: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">Click here to</a>
   ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/201432_b98e1d63_8162876.png "155114_9bce1969_8162876.png")
 
-### 项目介绍
-万岳科技可为商家快速搭建起一套属于自己的直播商城系统，有效避开商城直播过程中的痛点难点，加入自身创意的同时，汲取各家平台的特色功能和体验，并且可根据用户的运营需求对系统做定制开发。
-* 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
-* 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的直播商城系统。
+### Project introduction
+Wanyue Technology can quickly build a set of its own live mall system for merchants, effectively avoid the pain points and difficulties in the process of live mall. While adding its own creativity, it absorbs the features and experiences of various platforms, and can make customized development of the system according to the operation needs of users.
+* All frameworks or components used are based on open source projects and the code is guaranteed to be 100% open source.
+* Universal system functions, both individuals and enterprises can use the system to quickly build a live mall system of their own.
 
-基于ThinkPhp6.0+ android开发的一套万岳直播商城系统，系统功能介绍[查看]()，专业售后技术团队，让您二开无忧。
+Based on ThinkPhp6.0+ Android development of a set of Wanyue live mall system, system function introduction [view](), professional after-sales technical team, let you two worry free.
 
-### 功能简介
+### Function introduction
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173747_cb4407f6_8162876.png "直播电商开源版1.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173756_920ff851_8162876.png "直播电商开源版2.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173804_ab8632cd_8162876.png "直播电商开源版3.png")
-### 功能介绍表
+### Function Description Table
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/210122_47ed5487_8162876.png "未标题-1.png")
-### 开源版使用须知
+### Open Source Edition Usage notes
 
-- 允许用于个人学习、教学案例
-- 开源版不适合商用，商用请购买商业版
-- 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
+- Allowed for personal learning and teaching cases
+- The open source version is not suitable for commercial use, please purchase the commercial version for commercial use
+- It is forbidden to sell the codes and resources of the project in any form, and the infringers shall be solely responsible for any consequences arising therefrom
 
-### 商业合作
-* 如果你想使用功能更完善的直播商城系统，请联系QQ客服: 2415408120获取专业版
-* 如果您想基于直播商城系统进行定制开发，我们提供有偿定制服务支持！
-* 其他合作模式不限，欢迎来撩！
-* 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
+### Business cooperation
+* If you want to use a more complete live mall system, please contact QQ customer service: 2770722087 to obtain the professional version
+* If you want to customize development based on live mall system, we provide paid customization service support!
+* There is no limit to other cooperation modes, welcome to visit!
+* The website address：[http://git.sdwanyue.com](http://git.sdwanyue.com)
 
 
-### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
+### Contact us (add customer service manager wechat or QQ, free access to THE SQL script)
 
 <div style='height: 130px'>
     <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0317/100340_bec42d1f_8543696.png" width="602" height="123"/>
     <div style="float:left;">
-        <p>QQ：259603330</p>
+        <p>QQ：2770722087</p>
         <p>QQ群：995910672</p>
     </div>
 </div>
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 
 
-###  开源交流群【加群回答请填写“gitee直播”】
+###  Open source Communication Group [Please fill in "Gitee Live" for group answers]
 
 > QQ群：995910672
 <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0524/181101_c6bda503_2242923.jpeg" width="102" height="102"/>
