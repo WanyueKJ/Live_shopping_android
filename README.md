@@ -2,7 +2,7 @@
 
 
 ### Project description (if useful to you, please give a star!)
-##### <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479716">Project documentation</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479717">Deployment document</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo/2479722">Q&A</a>
+##### <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Project documentation</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Deployment document</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Q&A</a>
 ---
 
 ### Demo
