@@ -46,11 +46,12 @@ Based on ThinkPhp6.0+ Android development of a set of Wanyue live mall system, s
     <div style="float:left;">
         <p>QQ：2770722087</p>
         <p>QQ群：995910672</p>
+        <p>QQ群：681418688</p>
     </div>
 </div>
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 
 
-###  Open source Communication Group [Please fill in "Gitee Live" for group answers]
+###  Open source Communication Group [Please fill in "Github Live" for group answers]
 
 > QQ群：995910672
 <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0524/181101_c6bda503_2242923.jpeg" width="102" height="102"/>
