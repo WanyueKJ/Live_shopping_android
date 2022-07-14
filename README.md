@@ -2,6 +2,7 @@
 
 
 ### Project description (if useful to you, please give a star!)
+### 项目说明（如果对你有用，请给个star！请点击上方按钮，查看“部署文档”进行部署）
 ##### <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Project documentation</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Deployment document</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Q&A</a>
 ---
 
