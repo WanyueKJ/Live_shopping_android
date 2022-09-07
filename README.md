@@ -1,6 +1,6 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0929/142554_97c034b0_8162876.png" width="590" height="212"/></div>
 
-### 【注意】受平台文件大小限制，获取最新版代码，请点击<a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">gitee链接地址下载</a>
+### 【注意】受平台文件大小限制，获取最新版代码，请点击<a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_android">gitee链接地址下载</a>
 Limited by the size of the platform file, please click the Gitee link below to download the latest version of the code
 
 ### Project description (if useful to you, please give a star!)
