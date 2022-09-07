@@ -1,5 +1,7 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0929/142554_97c034b0_8162876.png" width="590" height="212"/></div>
 
+### 【注意】受平台文件大小限制，获取最新版代码，请点击<a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">gitee链接地址下载</a>
+Limited by the size of the platform file, please click the Gitee link below to download the latest version of the code
 
 ### Project description (if useful to you, please give a star!)
 ### 项目说明（如果对你有用，请给个star！请点击上方按钮，查看“部署文档”进行部署）
@@ -12,7 +14,7 @@
 
 ### Ios version address (can be directly jumped to view)
 - Warehouse Address: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_ios">Click here to</a>
-  ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/201432_b98e1d63_8162876.png "155114_9bce1969_8162876.png")
+![输入图片说明](https://gitee.com/WanYueKeJi/wanyue_zhibo_ios/raw/master/zhibo_demo.png "www.sdwanyue.com")
 
 ### Project introduction
 Wanyue Technology can quickly build a set of its own live mall system for merchants, effectively avoid the pain points and difficulties in the process of live mall. While adding its own creativity, it absorbs the features and experiences of various platforms, and can make customized development of the system according to the operation needs of users.
