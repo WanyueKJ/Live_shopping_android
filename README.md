@@ -29,11 +29,12 @@ Based on ThinkPhp6.0+ Android development of a set of Wanyue live mall system, s
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1101/173804_ab8632cd_8162876.png "直播电商开源版3.png")
 ### Function Description Table
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/210122_47ed5487_8162876.png "未标题-1.png")
-### Open Source Edition Usage notes
-
-- Allowed for personal learning and teaching cases
-- The open source version is not suitable for commercial use, please purchase the commercial version for commercial use
-- It is forbidden to sell the codes and resources of the project in any form, and the infringers shall be solely responsible for any consequences arising therefrom
+### Usage Notes of Open Source version
+- The code should be marked as "Source of Wanyue Science and Technology Open Source project", and then it can be operated for free
+- The contents displayed during front-end operation shall not use the relevant information of Wanyue Technology
+- Personal learning and teaching cases are allowed
+- The Open source version may not directly resell the source code
+- It is forbidden to sell the code and resources of the project in any form. The infringer shall be solely responsible for any consequences arising therefrom
 
 ### Business cooperation
 * If you want to use a more complete live mall system, please contact QQ customer service: 2770722087 to obtain the professional version
